@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: sans-serif;
+    color: black;
+}
+
+p{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+
+#chat{
+    position: fixed;
+    width: 200px;
+    height: 40px;
+    bottom: 0;
+    right: 20px;
+    background: magenta;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+}
+header{
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 120px;
+    /*background-image: url("img/fondo.jpg");
+    background-repeat: repeat;
+    background: #444*/
+
+}
+#logo{
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    width: auto;
+    height: auto;
+    /*background: #ccc;*/
+    
+}
+
+#letrasLog{
+    position: absolute;
+    top: 50px;
+    left:140px;
+    width: auto;
+    height: auto;
+    font-family: "Kaushan Script", cursive;
+    font-size: 50px;
+    text-align: center;
+    line-height: 60px;
+    color: white
+}
+
+
+.redes{
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 42px;
+    color: white;
+}
+#Facebook{
+    top: 42px;
+    right: 120px;
+    background: blue;
+}
+#Tweeter{
+    top: 42px;
+    right: 71px;
+    background: green;
+}
+#Instagram{
+    top: 42px;
+    right: 19px;
+    background: red;
+}
+nav{
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 48px;
+    background: white;
+}
+.botones{
+    float: left;
+    width: 196px;
+    height: 48px;
+    background: rgba(123,50,200,.4);
+    margin: 0px 2px;
+    font-family: 'Kaushan Script' ,cursive;
+    text-align: center;
+    line-height: 48px;
+    color: black;
+}
+
+a .botones:hover{
+    background: rgba(0,0,255,.4);
+}
+
+a .botones:active{
+    background: red;
+}
+body{
+    background: url("img/fondo4.jpg");
+}
+
+#top{
+    position: relative;
+    margin:20px auto;
+    width: 1000px;
+    height: 500px;
+    /*background: #888;*/
+    text-align: center;
+}
+
+#top ul li img{
+    border-radius: 100%;
+    height: 100px;
+}
+
+#top ul li h1{
+    font-family: 'Kaushan Script', cursive
+}
+
+section{
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 800px;
+
+    /*background: #aaa;*/
+}
+
+
+
+aside#izquierda{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 453px;
+    /*background: rgba(20,12,100,2);*/
+}
+
+aside#izquierda ul li{
+    background: gray;
+    padding: 20px;
+    margin: 2px 10px;
+    color: white;
+    list-style: circle;
+    list-style-position: inside;
+    list-style-image: url(img/lista.png);
+}
+
+aside#izquierda ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+article{
+    position: absolute;
+    left: 300px;
+    top: 0;
+    width: 650px;
+    height: 800px;
+    /*background: white;*/
+}
+
+.peli{
+    
+    float: left;
+    padding: 10px;
+    margin: 5px 10px;
+    line-height: 20px;
+
+}
+
+article h1{
+    font-family: 'Kaushan Script', cursive;
+    text-align: left;
+    font-size: 40px;
+    margin: 20px;
+}
+
+article p img{
+    float: left;
+    margin-right: 20px;
+}
+
+article p{
+    margin: 5px 26px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+aside#derecha{
+    position: absolute;
+    right:0;
+    top:0;
+    width: 200px;
+    height: 453px;
+    /*background: brown;*/
+}
+
+aside#derecha h1{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: rgba(100,0,255,1);
+    color: white;
+    margin-bottom: 5px;
+}
+
+aside#derecha input{
+    padding: 10px;
+    margin: 5px 0;
+    width: 176px;
+    background: black;
+}
+
+aside#derecha input[type="text"]{
+    background: url(img/usuario.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+aside#derecha input[type="password"]{
+    background: url(img/password.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+aside#derecha input[type="email"]{
+    background: url(img/correo.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+aside#derecha input[type="submit"]{
+    width: 200px;
+    background:rgba(100,0,100,.5);
+    border:0;
+}
+footer{
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    height: 75px;
+    background: #aaa;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+}
+#top ul{
+    width: 1016px;
+    height: 192px;
+
+}
+#top ul li{
+    float: left;
+    width: 326px;
+    height: 192px;
+    margin-right: 10px;
+    background: gray;
+
+}
+
+#top ul li p{
+    font-size: 14px;
+    margin: 10px;
+}
