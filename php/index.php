@@ -2,7 +2,7 @@
 include 'header.php';
 ?>
 <body>
-<!--SLIDER XD-->
+<!--SLIDER  XD-->
   <div>
     <div class="slideshow-container">
 

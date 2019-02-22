@@ -31,7 +31,7 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
-/* Caption text */
+/* Caption text s*/
 /*.text {
   color: #f2f2f2;
   font-size: 15px;
