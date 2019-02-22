@@ -1,0 +1,329 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background:#F6F6F6;
+    color:#3E3E3E;
+    font-size:14px; 
+}
+
+a{
+    text-decoration: none;
+    color:#3E3E3E;
+    
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.formulario{
+    padding: 20px;
+}
+
+label {
+display: block;
+margin: 5px 0 0 0;
+}
+
+
+input:focus {
+border: 2px solid #000;
+background: #F3F3F3;
+}
+
+select {
+    width:240px;
+    padding:5px;
+    border:1px solid #E7E7E7;
+    margin-right:10px;
+}
+
+input #submit {
+    padding:5px 30px;
+    border:1px solid #E7E7E7;
+    margin-right:20px;
+    background:#444;
+    color:#FFF;
+}
+
+.btn-link{
+    padding: 3px;
+    background: #2B6FB6;
+    color: white;
+}
+
+#CajaPrincipal{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.cajaRegistro{
+    text-align: right;
+    
+}
+
+.cajaRegistro h4{
+    margin-left: 12%
+}
+
+.cajaBanner{
+    width: 1000px;
+    height: 150px;
+    background: #43a6df;
+}
+
+.caja{
+    background: white;
+    border: #dcdcdc solid 1px;
+    margin: 0 0 10px 0;
+}
+
+.categorias{
+    background: darkcyan;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.foro{
+    padding: 5px 0 5px 0;
+    border-bottom: #dcdcdc solid 1px;
+}
+
+.foro_icono{
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+
+.foro_titulo{
+    float: left;
+    width: 555px;
+}
+
+.temas_mensajes{
+    float: left;
+    width: 170px;
+}
+
+.ultimocomentario{
+    float: left;
+    width: 170px;
+}
+
+.temas_titulo{
+    float: left;
+    width: 645px;
+}
+
+.temas_respuestas{
+    float: left;
+    width: 170px;
+}
+.temas_ultimo{
+    float: left;
+    width: 150px;
+}
+
+.nuevotema{
+    text-align: right;
+    width: 100%;
+}
+
+.nuevotema a{
+    background: #dcdcdc;
+    padding: 8px;
+}
+
+.temausuario{
+    padding: 5px 0 5px 0;
+    border-bottom: #dcdcdc solid 1px;
+    background: #dcdcdc;
+}
+
+.tema{
+    padding: 10px;
+    font-size: 14px;
+}
+.avatar{
+    width: 200px;
+    float: left;
+    padding: 0 0 0 10px;
+}
+.usuario{
+    width: 500px;
+    float: left;
+}
+.datos{
+    width: 200px;
+    float: left;
+}
+.firma{
+    padding: 10px;
+    border-bottom: #dcdcdc solid 1px;
+    background: #dcdcdc;
+}
+
+.tex{
+    width: 100%;
+}
+
+
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=tel],
+input[type=text],
+input[type=url]{
+    
+    border-radius: 8px;
+    display: inline-block;
+    height: 29px;
+    padding: 0 8px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+}
+
+.categorias h2{
+text-align: center;
+}
+
+.cajaHeader{
+    background-color: darkcyan;
+    position: relative;
+	margin: 20px auto;
+	width: 100%;
+    height: 100px;
+    
+}
+
+.cajaHeader img{
+    margin-top: 9px;
+    
+}
+
+.cajaHeader h1{
+    text-align: center;
+    margin-top: -50px;
+}
+
+.cajaHeader h2{
+    text-align: right;
+    margin-top: -35px;
+    padding-right: 15px;
+}
+
+.cajaRegistro a{
+    color: floralwhite;
+    size: 16px;
+    margin-right: 8px;
+}
+
+.foro form{
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 50%;
+    max-width: 500px;
+    background: #f3f3f3;
+    padding: 30px;
+    border: 1px solid rgba(0,0,0,.2);
+    
+}
+
+.foro form h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0,0,0,.5);
+}
+
+.logeo{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 15px 0;
+    
+}
+
+.entrar{
+    background: linear-gradient(#FFDA63,#FFB940);
+    border: 0;
+    color: brown;
+    opacity: 0.8;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.btn{
+    background: linear-gradient(#FFDA63,#FFB940);
+    border:0;
+    color: brown;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+
+.btn input{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.btn input[type="submit"]:hover{
+    opacity: 1;   
+}
+
+.btn input[type="submit"]:active{
+    transform: scale(0.95);
+    
+}
+
+
+
+input[type="submit"]{
+    background: linear-gradient(#FFDA63,#FFB940);
+    border:0;
+    color: brown;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 0;
+    height: 30px;
+    width: 13%;
+}
+
+input[type="submit"]:hover{
+    opacity: 1;   
+}
+
+input[type="submit"]:active{
+    transform: scale(0.95);
+    
+}
+
+#msj{
+color: red;
+font-style: italic;
+}
+
+#perfi{
+    border-color: #2B6FB6;
+    align-items: center;
+}
+
+
+
+
+
+
