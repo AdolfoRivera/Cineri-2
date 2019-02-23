@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype HTML5>
 <html lang="es">
 <head>  
   <!-- Required meta tags -->
@@ -12,81 +12,30 @@
 
   <!-- ARCHIVOS CSS PERSONALIZADOS -->
   <link type="text/css" rel="stylesheet" href="css_neri/estilos.css">
-  <link type?="text/css" rel = "stylesheet" href="css/estilos.css">
-  <title>Cineri Beta 1.0</title>
-  <style>
+  <link type="text/css" rel = "stylesheet" href="css/estilo2.css">
+  <title>Cineri Poderoso</title>
   
-* {box-sizing: border-box;}
-body {
-  font-family: Verdana, sans-serif;
-  background:black;
-}
-.mySlides {display: none;}
-img {vertical-align: middle;}
+  <!-- SECCION NAVEGACIÓN-->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+    <div class="container">    
+     
+      <a style="color:yellow" href="#" class="navbar-brand">
+        <strong >Cineri</strong>
+      </a>
+   
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+      data-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false"
+      aria-label="Desplegar menú de navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text s*/
-/*.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}*/
-
-/* Number text (1/3 etc) */
-/*.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}*/
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 10.8s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 9.5s;
-  animation-name: fade;
-  animation-duration: 9.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-  </style>
-</head>
+    <div class="collapse navbar-collapse" id="menu-principal" >
+      <ul class="navbar-nav ml-auto" >
+        <li class="nav-item"><a href="#" class="nav-link"> | Iniciar Sesion | </a></li>
+        <li class="nav-item"><a href="registro.php" class="nav-link"> Registrar | </a></li>
+        <li class="nav-item"><a href="#" class="nav-link"> Proximos Estrenos |</a></li>
+      
+      </ul>
+    </div>
+  </div>
+</nav>

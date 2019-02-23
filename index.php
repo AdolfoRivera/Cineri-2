@@ -1,6 +1,83 @@
 <?php
 include 'header.php';
 ?>
+
+<style>
+  
+* {box-sizing: border-box;}
+body {
+  font-family: Verdana, sans-serif;
+  background:black;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text s*/
+/*.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}*/
+
+/* Number text (1/3 etc) */
+/*.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}*/
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 10.8s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 9.5s;
+  animation-name: fade;
+  animation-duration: 9.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+  </style>
+</head>
 <body>
 <!--SLIDER  XD-->
   <div>
@@ -8,21 +85,21 @@ include 'header.php';
 
       <div class="mySlides fade">
        <!-- <div class="numbertext">1 / 3</div>-->
-        <img src="images/img_nature_wide.jpg" style="width:100%">
+        <img src="img/promo1.jpg" style="width:90%">
         <!--<div class="text">Caption Text</div>-->
       </div>
       
       <div class="mySlides fade">
         <!--<div class="numbertext">2 / 3</div>-->
-        <img src="images/img_snow_wide.jpg" style="width:100%">
+        <img src="img/promo2.jpg" style="width:90%">
        <!-- <div class="text">Caption Two</div>-->
       </div>
       
-      <div class="mySlides fade">
+      <!--<div class="mySlides fade">-->
        <!-- <div class="numbertext">3 / 3</div>-->
-        <img src="images/img_mountains_wide.jpg" style="width:100%">
+        <!--<img src="img/promocion4.jpg" style="width:90%">-->
        <!-- <div class="text">Caption Three</div>-->
-      </div>
+      <!--</div>-->
       
       </div>
       <br>
@@ -32,60 +109,17 @@ include 'header.php';
         <span class="dot"></span> 
         <span class="dot"></span> 
       </div>
-      <script>
-      var slideIndex = 0;
-      showSlides();
-      
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}    
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 10000); // Change image every 2 seconds
-      }
+      <script src="js/funciones">
+      showSlides()
       </script>
       </div>
-  
-  <!-- SECCION NAVEGACIÓN-->
-  <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
-    <div class="container">    
-     
-      <a style="color:yellow" href="#" class="navbar-brand">
-        <strong >Cineri</strong> beta 1.0
-      </a>
-   
-      <button type="button" class="navbar-toggler" data-toggle="collapse"
-      data-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false"
-      aria-label="Desplegar menú de navegación">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="menu-principal" >
-      <ul class="navbar-nav ml-auto" >
-        <li class="nav-item"><a href="#" class="nav-link">Registro</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Promociones</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Estrenos</a></li>
-      
-      </ul>
-    </div>
-  </div>
-</nav>
 
 <section class="filosofia py-4 bg-primary text-center text-white">
 
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <img src="images/logocine.jpg" width="260" height="auto" alt="Avatar de Tomas Mendez" class="img-fluid rounded-circle mb-4">
+        <img src="images/logocine.jpg" width="auto" height="auto" alt="Avatar de Tomas Mendez" class="img-fluid rounded-circle mb-4">
        <!--<p class="h2"></p>
         <p class="h4 font-italic">-</p>--> 
       </div>
