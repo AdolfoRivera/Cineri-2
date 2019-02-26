@@ -34,6 +34,7 @@
         <li class="nav-item"><a href="#" class="nav-link"> | Iniciar Sesion | </a></li>
         <li class="nav-item"><a href="registro.php" class="nav-link"> Registrar | </a></li>
         <li class="nav-item"><a href="#" class="nav-link"> Proximos Estrenos |</a></li>
+        <li class="nav-item"><a href="Nosotros.html" class="nav-link"> Nosotros |</a></li>
       
       </ul>
     </div>
