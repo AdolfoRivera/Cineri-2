@@ -42,12 +42,12 @@ html, body {
 .menu_toggle {
   z-index: 900;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 10;
   display: block;
   cursor: pointer;
-  width: 100px;
-  height: 80px;
+  width: 110px;
+  height: 150px;
   background-color: #ff401c;
   border-bottom-right-radius: 100%;
 }
@@ -55,7 +55,7 @@ html, body {
   opacity: 0.8;
 }
 .menu_toggle i {
-  color: #f0f0f0;
+  color:white;
 }
 .menu_toggle .menu_open, .menu_toggle .menu_close {
   position: absolute;
@@ -181,6 +181,7 @@ body {
     </style>
 <!--</head>
 <body>-->
+  <br><br><br>
     <div class="page">
   <span class="menu_toggle">
     <i class="menu_open fa fa-bars fa-lg"></i>
