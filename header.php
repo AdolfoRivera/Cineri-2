@@ -14,7 +14,7 @@
   <link type="text/css" rel="stylesheet" href="css_neri/estilos.css">
   <link type="text/css" rel = "stylesheet" href="css/estilo2.css">
   <title>Cineri Poderoso</title>
-  
+
   <!--ESTILOS PARA LA PESTAÑA NOSOTROS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
@@ -36,9 +36,9 @@
 
     <div class="collapse navbar-collapse" id="menu-principal" >
       <ul class="navbar-nav ml-auto" >
-        <li class="nav-item"><a href="#" class="nav-link"> | Iniciar Sesion | </a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link"> | Iniciar Sesion | </a></li>
         <li class="nav-item"><a href="registro.php" class="nav-link"> Registrar | </a></li>
-        <li class="nav-item"><a href="#" class="nav-link"> Proximos Estrenos |</a></li>
+        <li class="nav-item"><a href="index.php" class="nav-link"> Proximos Estrenos |</a></li>
         <li class="nav-item"><a href="Nosotros.php" class="nav-link"> Nosotros |</a></li>
       
       </ul>
