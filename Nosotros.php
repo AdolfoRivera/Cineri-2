@@ -1,11 +1,15 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>canvas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">-->
+<?php
+include 'header.php';
+?>
+
     <style>
     
      * {
@@ -175,8 +179,8 @@ body {
         }
     
     </style>
-</head>
-<body>
+<!--</head>
+<body>-->
     <div class="page">
   <span class="menu_toggle">
     <i class="menu_open fa fa-bars fa-lg"></i>
@@ -224,5 +228,9 @@ $('.content').on('click', function(){
 });
     
 </script>
-</body>
-</html>
+<!--</body>-->
+<!--</html>-->
+<?php
+include 'footer.php';
+?>
+
