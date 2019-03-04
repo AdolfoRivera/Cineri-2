@@ -182,10 +182,11 @@ input[type=url]{
     border-radius: 8px;
     display: inline-block;
     height: 29px;
-    padding: 0 8px;
+    padding: 0 30px;
     background: #fff;
     border: 1px solid #d9d9d9;
     border-top: 1px solid #c0c0c0;
+    margin-bottom: 1%
 }
 
 .categorias h2{
