@@ -24,7 +24,7 @@
   <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
     <div class="container">    
      
-      <a style="color:yellow" href="#" class="navbar-brand">
+      <a style="color:yellow" href="index.php" class="navbar-brand">
         <strong >Cineri</strong>
       </a>
    
