@@ -36,9 +36,9 @@
 
     <div class="collapse navbar-collapse" id="menu-principal" >
       <ul class="navbar-nav ml-auto" >
-        <li class="nav-item"><a href="index.php" class="nav-link"> | Iniciar Sesion | </a></li>
+        <li class="nav-item"><a href="#" class="nav-link"> | Iniciar Sesion | </a></li>
         <li class="nav-item"><a href="registro.php" class="nav-link"> Registrar | </a></li>
-        <li class="nav-item"><a href="index.php" class="nav-link"> Proximos Estrenos |</a></li>
+        <li class="nav-item"><a href="#" class="nav-link"> Proximos Estrenos |</a></li>
         <li class="nav-item"><a href="Nosotros.php" class="nav-link"> Nosotros |</a></li>
       
       </ul>
