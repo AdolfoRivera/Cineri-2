@@ -1,4 +1,4 @@
-<!doctype HTML>
+<!doctype HTML5>
 <html lang="es">
 <head>  
   <!-- Required meta tags -->
