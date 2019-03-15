@@ -40,7 +40,7 @@
         <li class="nav-item"><a href="registro.php" class="nav-link"> Registrar | </a></li>
         <li class="nav-item"><a href="#" class="nav-link"> Proximos Estrenos |</a></li>
         <li class="nav-item"><a href="Nosotros.php" class="nav-link"> Nosotros |</a></li>
-      
+        <li class= "nav-item"><a href="promos_nuevo.php" class="nav-link">Promocciones<a></li>
       </ul>
     </div>
   </div>
