@@ -257,6 +257,11 @@ aside#derecha input[type="submit"]{
     background:rgba(100,0,100,.5);
     border:0;
 }
+
+.promo_art{
+    align-items: center;
+}
+
 footer{
     position: relative;
     margin: 20px auto;

@@ -13,7 +13,7 @@
   <!-- ARCHIVOS CSS PERSONALIZADOS -->
   <link type="text/css" rel="stylesheet" href="css_neri/estilos.css">
   <link type="text/css" rel = "stylesheet" href="css/estilo2.css">
-  <title>Cineri Poderoso</title>
+  <title>Cineri</title>
 
   <!--ESTILOS PARA LA PESTAÑA NOSOTROS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -36,11 +36,23 @@
 
     <div class="collapse navbar-collapse" id="menu-principal" >
       <ul class="navbar-nav ml-auto" >
-        <li class="nav-item"><a href="#" class="nav-link"> | Iniciar Sesion | </a></li>
-        <li class="nav-item"><a href="registro.php" class="nav-link"> Registrar | </a></li>
-        <li class="nav-item"><a href="#" class="nav-link"> Proximos Estrenos |</a></li>
-        <li class="nav-item"><a href="Nosotros.php" class="nav-link"> Nosotros |</a></li>
-        <li class= "nav-item"><a href="promos_nuevo.php" class="nav-link">Promocciones<a></li>
+        <?php
+        if(isset($_SESSION["id"])){?>
+          <li class="nav-item"><a href="perfil.php" class ="nav-link" ><?php echo $_SESSION["nombre"]; ?> </a><li>
+          <li class="nav-item"><a href="#" class="nav-link"> Proximos Estrenos |</a></li>
+          <li class="nav-item"><a href="Nosotros.php" class="nav-link"> Nosotros |</a></li>
+          <li class= "nav-item"><a href="promos_nuevo.php" class="nav-link">Promociones<a></li>
+          <?php
+        }else{
+          ?>
+          <li class="nav-item"><a href="logear.php" class="nav-link"> | Iniciar Sesion | </a></li>
+          <li class="nav-item"><a href="registro.php" class="nav-link"> Registrar | </a></li>
+          <li class="nav-item"><a href="#" class="nav-link"> Proximos Estrenos |</a></li>
+          <li class="nav-item"><a href="Nosotros.php" class="nav-link"> Nosotros |</a></li>
+          <li class= "nav-item"><a href="promos_nuevo.php" class="nav-link">Promociones<a></li>
+          <?php
+        }
+        ?>
       </ul>
     </div>
   </div>
