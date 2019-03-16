@@ -1,4 +1,5 @@
 <?php
+require_once 'class/usuarios.php';
 include 'header.php';
 ?>
 

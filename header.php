@@ -1,4 +1,4 @@
-<!doctype HTML5>
+<!doctype HTML>
 <html lang="es">
 <head>  
   <!-- Required meta tags -->
@@ -37,18 +37,17 @@
     <div class="collapse navbar-collapse" id="menu-principal" >
       <ul class="navbar-nav ml-auto" >
         <?php
-        if(isset($_SESSION["id"])){?>
-          <li class="nav-item"><a href="perfil.php" class ="nav-link" ><?php echo $_SESSION["nombre"]; ?> </a><li>
+        if(isset($_SESSION["idcliente"])){    ?>
+          <li class="nav-item"><a href="perfil.php" class ="nav-link" ><?php echo $_SESSION["Nombre"] ." ". $_SESSION["Apellidos"]; ?></a></li>
+          <li class="nav-item"><a href="salir.php" class="nav-link">| Salir |</a></li>
           <li class="nav-item"><a href="#" class="nav-link"> Proximos Estrenos |</a></li>
-          <li class="nav-item"><a href="Nosotros.php" class="nav-link"> Nosotros |</a></li>
           <li class= "nav-item"><a href="promos_nuevo.php" class="nav-link">Promociones<a></li>
           <?php
-        }else{
+        }else{ 
           ?>
           <li class="nav-item"><a href="logear.php" class="nav-link"> | Iniciar Sesion | </a></li>
           <li class="nav-item"><a href="registro.php" class="nav-link"> Registrar | </a></li>
           <li class="nav-item"><a href="#" class="nav-link"> Proximos Estrenos |</a></li>
-          <li class="nav-item"><a href="Nosotros.php" class="nav-link"> Nosotros |</a></li>
           <li class= "nav-item"><a href="promos_nuevo.php" class="nav-link">Promociones<a></li>
           <?php
         }

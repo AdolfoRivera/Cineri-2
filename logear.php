@@ -16,7 +16,7 @@ include "header.php"
         //Esta parte nos permite mantener en la pagina de foro si la sesion esta abierta 
         if(isset($_SESSION["nombre"])){
             //echo '<script>href.location="indice.php"</script>';
-            header('Location: indice.php');
+            header('Location: index.php');
         }
         ?>
 

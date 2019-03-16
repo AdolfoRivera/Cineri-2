@@ -7,6 +7,7 @@
     
      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">-->
 <?php
+require_once 'class/usuarios.php';
 include 'header.php';
 ?>
 

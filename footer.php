@@ -1,7 +1,8 @@
 <!-- SECCION PIE DE PÁGINA -->
 <footer class="pie-de-pagina text-center text-md-right bg-dark text-white">
   <div class="container">
-    <p style="color:white, text-align:center;" class="m-0 py-3">Copyright © 2019. Todos los derechos reservados. </p>
+  <li class="nav-item"><a href="Nosotros.php" class="nav-link"> Nosotros |</a></li>
+  <p style="color:white, text-align:center;" class="m-0 py-3">Copyright © 2019. Todos los derechos reservados. </p>
     
   </div>
 </footer>

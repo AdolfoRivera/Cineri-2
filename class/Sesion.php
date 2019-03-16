@@ -17,8 +17,7 @@ class Sesion extends Conexion {
         $pass = sha1($_POST["password"]);
         $correo = $_POST["correo"];
 
-        //$resultado = $this->mysqli->query("SELECT id, nombre from cliente where nick = '$usuario' and password = '$pass'");
-        $resultado = $this->mysqli->query("SELECT idcliente, Nombre from cliente where Correo = '$correo' and Contraseña = '$pass'");
+        $resultado = $this->mysqli->query("SELECT idcliente, Nombre, Apellidos from cliente where Correo = '$correo' and Contraseña = '$pass'");
 
         while ( $fila = $resultado->fetch_assoc() ) {
             $this->login[] = $fila;
@@ -28,6 +27,8 @@ class Sesion extends Conexion {
             foreach ($this->login as $key) {
                 $_SESSION["idcliente"] = $key["idcliente"];
                 $_SESSION["Nombre"] = $key["Nombre"];
+                $_SESSION["Apellidos"] = $key["Apellidos"];
+                
                 if($_SESSION["idcliente"]==1){
                     header("Location: panel.php");
                 }else{
@@ -42,7 +43,7 @@ class Sesion extends Conexion {
                 }*/
             }
         } else {
-            header("Location: index.php?m=1");
+            header("Location: logear.php?m=1");
         }
     }
 

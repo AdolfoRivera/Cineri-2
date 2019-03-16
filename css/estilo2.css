@@ -179,14 +179,14 @@ input[type=tel],
 input[type=text],
 input[type=url]{
     
-    border-radius: 8px;
+    border-radius: 15px;
+    margin: 10px;
     display: inline-block;
-    height: 29px;
-    padding: 0 30px;
+    height: 88%;
+    padding: 11px 45px;
     background: #fff;
-    border: 1px solid #d9d9d9;
+    border: 2px solid #d9d9d9;
     border-top: 1px solid #c0c0c0;
-    margin-bottom: 1%
 }
 
 .categorias h2{
