@@ -1,5 +1,8 @@
 <?php
 require_once 'class/usuarios.php';
+require_once 'class/peliculas.php';
+
+$peli = new peliculas();
 include 'header.php';
 ?>
 
@@ -15,7 +18,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
+  max-width: 70%;
   position: relative;
   margin: auto;
 }
@@ -115,226 +118,49 @@ img {vertical-align: middle;}
       </script>
       </div>
 
-<section class="filosofia py-4 bg-primary text-center text-white">
+<!--<section class="filosofia py-4 bg-primary text-center text-white">
 
   <div class="container">
     <div class="row">
       <div class="col-12">
         <img src="images/logocine.jpg" width="auto" height="auto" alt="Avatar de Tomas Mendez" class="img-fluid rounded-circle mb-4">
        <!--<p class="h2"></p>
-        <p class="h4 font-italic">-</p>--> 
+        <p class="h4 font-italic">-</p> 
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
 <!-- SECCION PROYECTOS -->
 <section class="proyectos py-4">
   <div class="container">
-    <h1 class="display-4 font-weight-bold text-center pb-4">Cartelera</h1>
-    <div class="row text-md-center">
+    <h1 class="display-4 font-weight-bold text-center pb-4"><strong>Cartelera</strong></h1>
+    <div class="row text-md-center">  
+      <?php
+      $datos = $peli->ListarPeliulas();
+      foreach($datos as $i){
+          $datos["Nombre"] = $i["Nombre"];
+          $datos["Archivo"] = $i["Archivo"];
+      ?>
       <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
         <div class="card">
-          <img class="card-img-top h-100" src="images/peliculas1.jpg" alt="Proyecto 1">
+          <img class="card-img-top h-100" src=<?php echo $i["Archivo"];?> alt="Proyecto 1">
           <div class="card-body">
-            <h5 class="card-title">Pelicula 1</h5>
-            <p class="card-text">
-            Descripcion de la pelicula</p>
+            <h5 class="card-title"><?php echo $i["Nombre"]; ?></h5>
             <a href="#" class="btn btn-primary">Reservar En Desarollo</a>
+            
           </div>
+          
         </div>
         <br>
-      </article>
-      
-      <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-        <div class="card">
-          <img class="card-img-top h-100" src="images/pelicula2.jpg" alt="Proyecto 2">
-          <div class="card-body">
-            <h5 class="card-title">Pelicula 2</h5>
-            <p class="card-text">
-           Descripcion de la pelicula </p>
-            <a href="#" class="btn btn-primary">Reservar en desarollo</a>
-          </div>
-        </div>
-        <br>
-      </article>
-
-      <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-        <div class="card">
-          <img class="card-img-top h-100" src="images/pelicula3.jpg" alt="Proyecto 3">
-          <div class="card-body">
-            <h5 class="card-title">Pelicula 3</h5>
-            <p class="card-text">
-           Descripcion de la pelicula</p>
-            <a href="#" class="btn btn-primary">Reservar en desarollo</a>
-          </div>
-        </div>
-        <br>
-      </article>
-      <article class="col-12 col-md-6 col-lg-3   mb-3 mb-lg-0">
-        <div class="card">
-          <img class="card-img-top h-100" src="images/peliculas1.jpg" alt="Proyecto 4">
-          <div class="card-body">
-            <h5 class="card-title">Pelicula 4</h5>
-            <p class="card-text">
-            Descripcion de la pelicula</p>
-            <a href="#" class="btn btn-primary">Reservar en desarollo</a>
-          </div>
-        </div>
-        <br>
-      </article>
-    
-      <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-          <div class="card">
-            <img class="card-img-top h-100" src="images/peliculas1.jpg" alt="Proyecto 1">
-            <div class="card-body">
-              <h5 class="card-title">Pelicula 1</h5>
-              <p class="card-text">
-              Descripcion de la pelicula</p>
-              <a href="#" class="btn btn-primary">Reservar En Desarollo</a>
-            </div>
-          </div>
-          <br>
-        </article>
-        <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-          <div class="card">
-            <img class="card-img-top h-100" src="images/pelicula2.jpg" alt="Proyecto 2">
-            <div class="card-body">
-              <h5 class="card-title">Pelicula 2</h5>
-              <p class="card-text">
-             Descripcion de la pelicula </p>
-              <a href="#" class="btn btn-primary">Reservar en desarollo</a>
-            </div>
-          </div>
-          <br>
-        </article>
-  
-        <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-          <div class="card">
-            <img class="card-img-top h-100" src="images/pelicula3.jpg" alt="Proyecto 3">
-            <div class="card-body">
-              <h5 class="card-title">Pelicula 3</h5>
-              <p class="card-text">
-             Descripcion de la pelicula</p>
-              <a href="#" class="btn btn-primary">Reservar en desarollo</a>
-            </div>
-          </div>
-          <br>
-        </article>
-        <article class="col-12 col-md-6 col-lg-3   mb-3 mb-lg-0">
-          <div class="card">
-            <img class="card-img-top h-100" src="images/peliculas1.jpg" alt="Proyecto 4">
-            <div class="card-body">
-              <h5 class="card-title">Pelicula 4</h5>
-              <p class="card-text">
-              Descripcion de la pelicula</p>
-              <a href="#" class="btn btn-primary">Reservar en desarollo</a>
-            </div>
-          </div>
-          <br>
-        </article>
-        <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-            <div class="card">
-              <img class="card-img-top h-100" src="images/peliculas1.jpg" alt="Proyecto 1">
-              <div class="card-body">
-                <h5 class="card-title">Pelicula 1</h5>
-                <p class="card-text">
-                Descripcion de la pelicula</p>
-                <a href="#" class="btn btn-primary">Reservar En Desarollo</a>
-              </div>
-            </div>
-            <br>
-          </article>
-          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-            <div class="card">
-              <img class="card-img-top h-100" src="images/pelicula2.jpg" alt="Proyecto 2">
-              <div class="card-body">
-                <h5 class="card-title">Pelicula 2</h5>
-                <p class="card-text">
-               Descripcion de la pelicula </p>
-                <a href="#" class="btn btn-primary">Reservar en desarollo</a>
-              </div>
-            </div>
-            <br>
-          </article>
-    
-          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-            <div class="card">
-              <img class="card-img-top h-100" src="images/pelicula3.jpg" alt="Proyecto 3">
-              <div class="card-body">
-                <h5 class="card-title">Pelicula 3</h5>
-                <p class="card-text">
-               Descripcion de la pelicula</p>
-                <a href="#" class="btn btn-primary">Reservar en desarollo</a>
-              </div>
-            </div>
-            <br>
-          </article>
-          <article class="col-12 col-md-6 col-lg-3   mb-3 mb-lg-0">
-            <div class="card">
-              <img class="card-img-top h-100" src="images/peliculas1.jpg" alt="Proyecto 4">
-              <div class="card-body">
-                <h5 class="card-title">Pelicula 4</h5>
-                <p class="card-text">
-                Descripcion de la pelicula</p>
-                <a href="#" class="btn btn-primary">Reservar en desarollo</a>
-              </div>
-            </div>
-            <br>
-          </article>
-        
-          <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-              <div class="card">
-                <img class="card-img-top h-100" src="images/peliculas1.jpg" alt="Proyecto 1">
-                <div class="card-body">
-                  <h5 class="card-title">Pelicula 1</h5>
-                  <p class="card-text">
-                  Descripcion de la pelicula</p>
-                  <a href="#" class="btn btn-primary">Reservar En Desarollo</a>
-                </div>
-              </div>
-              <br>
-            </article>
-            <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-              <div class="card">
-                <img class="card-img-top h-100" src="images/pelicula2.jpg" alt="Proyecto 2">
-                <div class="card-body">
-                  <h5 class="card-title">Pelicula 2</h5>
-                  <p class="card-text">
-                 Descripcion de la pelicula </p>
-                  <a href="#" class="btn btn-primary">Reservar en desarollo</a>
-                </div>
-              </div>
-              <br>
-            </article>
-      
-            <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
-              <div class="card">
-                <img class="card-img-top h-100" src="images/pelicula3.jpg" alt="Proyecto 3">
-                <div class="card-body">
-                  <h5 class="card-title">Pelicula 3</h5>
-                  <p class="card-text">
-                 Descripcion de la pelicula</p>
-                  <a href="#" class="btn btn-primary">Reservar en desarollo</a>
-                </div>
-              </div>
-              <br>
-            </article>
-            <article class="col-12 col-md-6 col-lg-3   mb-3 mb-lg-0">
-              <div class="card">
-                <img class="card-img-top h-100" src="images/peliculas1.jpg" alt="Proyecto 4">
-                <div class="card-body">
-                  <h5 class="card-title">Pelicula 4</h5>
-                  <p class="card-text">
-                  Descripcion de la pelicula</p>
-                  <a href="#" class="btn btn-primary">Reservar en desarollo</a>
-                </div>
-              </div>
-              <br>
-            </article>
+        </article> 
+        <?php }?>
+       
     </div>
+      
   </div>
 </section>
+
 <?php
 include 'footer.php';
 ?>
