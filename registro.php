@@ -9,7 +9,7 @@ include "header.php";
         <input type="text" name="apellidos"  pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" placeholder="Apellidos ">
         <input type="email" name="correo" placeholder="Correo Electronico">
         <input type="password" name="pass" placeholder="Contraseña" required="required">
-        <button class="entrar" type="submit" name="iniciar" class="btn">Registrar</button>
+        <button class="btn btn-danger" type="submit" name="iniciar" class="btn">Registrar</button>
     </form>
 </div>
 <?php

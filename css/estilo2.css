@@ -82,7 +82,7 @@ input #submit {
 }
 
 .categorias{
-    background: darkcyan;
+    /*background: darkcyan;*/
     color: white;
     padding: 10px;
     font-size: 14px;
@@ -182,8 +182,9 @@ input[type=url]{
     border-radius: 15px;
     margin: 10px;
     display: inline-block;
-    height: 88%;
-    padding: 11px 45px;
+    height: 94%;
+    width: 100%;
+    padding: 10px 30px;
     background: #fff;
     border: 2px solid #d9d9d9;
     border-top: 1px solid #c0c0c0;
@@ -228,7 +229,7 @@ text-align: center;
     margin: auto;
     margin-top: 10%;
     margin-bottom: 10%;
-    width: 50%;
+    width: 70%;
     max-width: 500px;
     background: #f3f3f3;
     padding: 30px;
@@ -250,7 +251,12 @@ text-align: center;
     
 }
 
-.entrar{
+.btn-danger{
+    width: 100%;
+    margin: 20px 0;
+}
+
+/*.entrar{
     background: linear-gradient(#FFDA63,#FFB940);
     border: 0;
     color: brown;
@@ -311,7 +317,7 @@ input[type="submit"]:hover{
 input[type="submit"]:active{
     transform: scale(0.95);
     
-}
+}*/
 
 
 #msj{

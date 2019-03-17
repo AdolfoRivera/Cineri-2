@@ -40,7 +40,7 @@ include "header.php"
             }
         }
         ?>
-        <button class="entrar" type="submit">Ingresar</button>
+        <button class="btn btn-danger" type="submit">Ingresar</button>
       </form>
 
     </div>

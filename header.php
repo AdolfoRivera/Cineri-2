@@ -24,9 +24,11 @@
   <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
     <div class="container">    
      
-      <a style="color:yellow" href="index.php" class="navbar-brand">
+    <div class="btn btn-primary btn-md">
+      <a style="color:white" href="index.php" class="label label-primary">
         <strong >Cineri</strong>
       </a>
+    </div>
    
       <button type="button" class="navbar-toggler" data-toggle="collapse"
       data-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false"
@@ -38,17 +40,25 @@
       <ul class="navbar-nav ml-auto" >
         <?php
         if(isset($_SESSION["idcliente"])){    ?>
-          <li class="nav-item"><a href="perfil.php" class ="nav-link" ><?php echo $_SESSION["Nombre"] ." ". $_SESSION["Apellidos"]; ?></a></li>
-          <li class="nav-item"><a href="salir.php" class="nav-link">| Salir |</a></li>
-          <li class="nav-item"><a href="#" class="nav-link"> Proximos Estrenos |</a></li>
-          <li class= "nav-item"><a href="promos_nuevo.php" class="nav-link">Promociones<a></li>
+        
+
+        <div class="dropdown">
+        <button class="btn btn-primary btn-md dropdown-toggle" type="button" data-toggle="dropdown"><?php echo $_SESSION["Nombre"] ." ". $_SESSION["Apellidos"]; ?>
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+        <li class="nav-item"><a href="perfil.php" >Perfil</a></li>
+        <li class="nav-item"><a href="salir.php" >Salir</a></li>
+        </ul>
+        </div>
+          <li class="nav-item"><a href="#" class="btn btn-primary btn-md"> Proximos Estrenos</a></li>
+          <li class= "nav-item"><a href="promos_nuevo.php" class="btn btn-primary btn-md">Promociones<a></li>
           <?php
         }else{ 
           ?>
-          <li class="nav-item"><a href="logear.php" class="nav-link"> | Iniciar Sesion | </a></li>
-          <li class="nav-item"><a href="registro.php" class="nav-link"> Registrar | </a></li>
-          <li class="nav-item"><a href="#" class="nav-link"> Proximos Estrenos |</a></li>
-          <li class= "nav-item"><a href="promos_nuevo.php" class="nav-link">Promociones<a></li>
+          <li class="nav-item"><a href="logear.php" class="btn btn-primary btn-md"> Iniciar Sesion  </a></li>
+          <li class="nav-item"><a href="registro.php" class="btn btn-primary btn-md"> Registrar  </a></li>
+          <li class="nav-item"><a href="#" class="btn btn-primary btn-md"> Proximos Estrenos </a></li>
+          <li class= "nav-item"><a href="promos_nuevo.php" class="btn btn-primary btn-md">Promociones<a></li>
           <?php
         }
         ?>
