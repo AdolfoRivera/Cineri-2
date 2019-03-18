@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
   <!-- ARCHIVOS CSS BOOTSTRAP 4 -->
   <link type="text/css" rel="stylesheet" href="css_neri/bootstrap.min.css">
-
+  
   <!-- ARCHIVOS CSS PERSONALIZADOS -->
   <link type="text/css" rel="stylesheet" href="css_neri/estilos.css">
   <link type="text/css" rel = "stylesheet" href="css/estilo2.css">

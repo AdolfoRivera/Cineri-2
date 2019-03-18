@@ -139,6 +139,7 @@ img {vertical-align: middle;}
       <?php
       $datos = $peli->ListarPeliulas();
       foreach($datos as $i){
+          $datos["idPeliculas"] =$i["idPeliculas"];
           $datos["Nombre"] = $i["Nombre"];
           $datos["Archivo"] = $i["Archivo"];
       ?>
@@ -147,7 +148,7 @@ img {vertical-align: middle;}
           <img class="card-img-top h-100" src=<?php echo $i["Archivo"];?> alt="Proyecto 1">
           <div class="card-body">
             <h5 class="card-title"><?php echo $i["Nombre"]; ?></h5>
-            <a href="#" class="btn btn-primary">Reservar En Desarollo</a>
+            <a href="pelicula.php?id=<?php echo $i["idPeliculas"]."&url=".$i["Archivo"];?>" class="btn btn-primary">Consultar</a>
             
           </div>
           
