@@ -30,5 +30,30 @@ class peliculas extends conexion{
         
         return $this->data;
     }
+
+    public function AgregarPeliculas(){
+        parent::Conectar();
+
+        $nombre = $_POST["nombre"];
+        $director = $_POST["director"];
+        $año = $_POST["año"];
+        $pais = $_POST["pais"];
+        $genero = $_POST["genero"];
+        $sinopsis = $_POST["sinopsis"];
+        $duracion = $_POST["duracion"];
+
+        $resultado = $this->mysqli->query("INSERT INTO peliculas VALUES($director,$año,$clasificacion,$pais,$genero,$sinopsis,$nombre,$duracion,$actores,$enlace);");
+        
+        if($resultado){
+            echo "<script type='text/javascript'>
+            window.alert('Agregado con exito');
+            </script>";
+        }else{
+            echo "<script type='text/javascript'>
+            window.alert('Ha ocurrido un error');
+            </script>";
+        }
+    }
+    
 }
 ?>
