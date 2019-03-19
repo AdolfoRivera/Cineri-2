@@ -11,7 +11,7 @@ include 'header.php';
 * {box-sizing: border-box;}
 body {
   font-family: Verdana, sans-serif;
-  background:black;
+  background:white;
 }
 .mySlides {display: none;}
 img {vertical-align: middle;}
@@ -55,7 +55,7 @@ img {vertical-align: middle;}
 }
 
 .active {
-  background-color: #717171;
+  /background-color: #717171;
 }
 
 /* Fading animation */

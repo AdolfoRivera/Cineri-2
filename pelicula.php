@@ -42,10 +42,10 @@ include 'header.php';
                 <div class="container">
                     <ul class="nav nav-tabs"> 
                         <li class="nav-item"> 
-                            <a class="nav-link active" href="#trailer">Trailer</a>
+                            <a class="nav-link active" data-toggle="tab" href="#trailer">Trailer</a>
                         </li>
                         <li class="nav-item"> 
-                            <a class="nav-link" href="#sinopsis">Sinopsis</a>
+                            <a class="nav-link " data-toggle="tab" href="#sinopsis">Sinopsis</a>
                         </li>
                     </ul>
                     
