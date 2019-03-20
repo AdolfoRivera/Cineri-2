@@ -3,7 +3,7 @@ session_start();
 abstract class Conexion {
    //*****************************************************************************
    public function conectar(){
-      $mysqli = new mysqli('localhost','root','','Cine',3306);
+      $mysqli = new mysqli('localhost','root','','Cine',3307);
       
       if ($mysqli->connect_errno)
          header('Location: offline.html');

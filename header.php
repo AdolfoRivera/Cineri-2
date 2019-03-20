@@ -60,6 +60,7 @@
           <li class="nav-item"><a href="#" class="btn btn-primary btn-md"> Proximos Estrenos </a></li>
           <li class= "nav-item"><a href="promos_nuevo.php" class="btn btn-primary btn-md">Promociones<a></li>
           <li class= "nav-item"><a href="Nosotros.php" class="btn btn-primary btn-md">Nosotros<a></li>
+          
           <?php
         }
         ?>

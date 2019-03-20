@@ -4,7 +4,12 @@ include "header.php";
 ?>
 
 <!-- SECCION PROYECTOS -->
-<section class="Promocion">
+<br>
+<br>
+<br>
+
+<div class="col-sm-1 ">
+<section class="Promocion ">
   <div class="Promo-prin">
     <h1 class="titulo_promocion">Promociones</h1>
     <div class="promo-prin2">
@@ -33,8 +38,10 @@ include "header.php";
     </article>
     </div>
   </div>
-</section>
 
+
+</section>
+</div>
 <?php
 include "footer.php";
 ?>

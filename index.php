@@ -12,13 +12,26 @@ include 'header.php';
 body {
   font-family: Verdana, sans-serif;
   background:white;
+  background-repeat: no-repeat;
+ background-image: url('https://s3.amazonaws.com/statics3.cinemex.com/uploads/cms/bgs/bg-1920.jpg?1552651803');
+ 
 }
-.mySlides {display: none;}
-img {vertical-align: middle;}
+.mySlides {
+  display: none;
+
+}
+img {
+  vertical-align: middle;
+  width:100%;
+  height:250PX;
+  
+}
+
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 70%;
+  max-width: 60%;
+  
   position: relative;
   margin: auto;
 }
@@ -55,7 +68,7 @@ img {vertical-align: middle;}
 }
 
 .active {
-  /background-color: #717171;
+  background-color: #717171;
 }
 
 /* Fading animation */
@@ -84,12 +97,14 @@ img {vertical-align: middle;}
 </head>
 <body>
 <!--SLIDER  XD-->
+<BR>
+<HR>
   <div>
     <div class="slideshow-container">
 
       <div class="mySlides fade">
        <!-- <div class="numbertext">1 / 3</div>-->
-        <img src="img/promo1.jpg" style="width:100%">
+        <img src="img/promo1.jpg" style="width:100% ">
         <!--<div class="text">Caption Text</div>-->
       </div>
       
