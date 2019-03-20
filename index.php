@@ -12,6 +12,9 @@ include 'header.php';
 body {
   font-family: Verdana, sans-serif;
   background:white;
+  background-repeat: no-repeat;
+ background-image: url('https://s3.amazonaws.com/statics3.cinemex.com/uploads/cms/bgs/bg-1920.jpg?1552651803');
+ 
 }
 .mySlides {
   display: none;
@@ -20,12 +23,14 @@ body {
 img {
   vertical-align: middle;
   width:100%;
-  height:500px;
+  height:250PX;
+  
 }
+
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 100%;
+  max-width: 60%;
   
   position: relative;
   margin: auto;
@@ -93,8 +98,7 @@ img {
 <body>
 <!--SLIDER  XD-->
 <BR>
-<BR>
-<BR>
+<HR>
   <div>
     <div class="slideshow-container">
 
