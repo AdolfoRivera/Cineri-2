@@ -65,7 +65,7 @@ class peliculas extends conexion{
     }
 
     public function llenarNombres(){
-        $resultado =$this->mysqli->queery("select idPeliculas,Nombre from peliculas");
+        $resultado =$this->mysqli->query("select idPeliculas,Nombre from peliculas");
 
         while ( $fila = $resultado->fetch_assoc()) {
             $this->data[] = $fila;
@@ -75,10 +75,20 @@ class peliculas extends conexion{
     }
 
     public function InsertarLinkImagen(){
-        $id = $_POST["id"];
-        $enlace = $_POST["link"];
+        $nombre = $_POST["peli"];
+        $enlace = $_POST["enlace"];
+        echo $nombre;
+        $resultado = $this->mysqli->query("SELECT idPeliculas FROM peliculas WHERE nombre = '$nombre';");
+        
+        while ( $fila = $resultado->fetch_assoc()) {
+            $id = $fila["idPeliculas"];
+        }
 
-        $resultado = $this->mysqli->query("INSERT INTO imagen(idpeliculas,Archivo) VALUES($id,'$enlace')"); 
+
+        
+        
+
+        $resultado = $this->mysqli->query("INSERT INTO imagen(idpeliculas,Archivo) VALUES($id,'$enlace');"); 
         if(!$resultado){
 
             echo $this->mysqli->error;

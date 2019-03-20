@@ -54,16 +54,22 @@ include 'header.php';
 </div>
 
 <div class="formulario" style ="padding: 10%;margin-top: -11%;"> 
-    <form onSubmit="return validar(this)" action="registrarImagen.php" name="reg" method="post">
+    <form onSubmit="return validar(this)" action="insertarImagen.php?>" name="reg" method="post">
     <div class="form-group">
     <label name="pelicula" for="peli">Seleccionar pelicula</label>
-    <select name="peli">
-    <option>En desarrollo</option>
+    <select class="form-control" name="peli" >
+    <?php
+    $datos = $peli->llenarNombres();
+    foreach($datos as $i){
+        $datos["Nombre"] = $i["Nombre"];
+    ?>
+    <option><?php echo $i["Nombre"];?></option>
+    <?php }?>
     </select>
     </div>
     <div class="form-group">
     <label name="enlace" for="enlace">Link de la imagen:</label>
-    <input type="text"  name="nombre" class="form-control" id="enlace" required="required">
+    <input type="text"  name="enlace" class="form-control" id="enlace" required="required">
     </div>
     <button type="submit" class="btn btn-primary">Agregar</button>
     </form>
