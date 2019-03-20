@@ -53,6 +53,21 @@ include 'header.php';
     </form>
 </div>
 
+<div class="formulario" style ="padding: 10%;margin-top: -11%;"> 
+    <form onSubmit="return validar(this)" action="registrarImagen.php" name="reg" method="post">
+    <div class="form-group">
+    <label name="pelicula" for="peli">Seleccionar pelicula</label>
+    <select name="peli">
+    <option>En desarrollo</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <label name="enlace" for="enlace">Link de la imagen:</label>
+    <input type="text"  name="nombre" class="form-control" id="enlace" required="required">
+    </div>
+    <button type="submit" class="btn btn-primary">Agregar</button>
+    </form>
+    </div>
 <?php
 
 include 'footer.php';
