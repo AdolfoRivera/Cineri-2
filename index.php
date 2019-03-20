@@ -13,12 +13,20 @@ body {
   font-family: Verdana, sans-serif;
   background:white;
 }
-.mySlides {display: none;}
-img {vertical-align: middle;}
+.mySlides {
+  display: none;
+
+}
+img {
+  vertical-align: middle;
+  width:100%;
+  height:500px;
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 70%;
+  max-width: 100%;
+  
   position: relative;
   margin: auto;
 }
@@ -55,7 +63,7 @@ img {vertical-align: middle;}
 }
 
 .active {
-  /background-color: #717171;
+  background-color: #717171;
 }
 
 /* Fading animation */
@@ -84,12 +92,15 @@ img {vertical-align: middle;}
 </head>
 <body>
 <!--SLIDER  XD-->
+<BR>
+<BR>
+<BR>
   <div>
     <div class="slideshow-container">
 
       <div class="mySlides fade">
        <!-- <div class="numbertext">1 / 3</div>-->
-        <img src="img/promo1.jpg" style="width:100%">
+        <img src="img/promo1.jpg" style="width:100% ">
         <!--<div class="text">Caption Text</div>-->
       </div>
       
