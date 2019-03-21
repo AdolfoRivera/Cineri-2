@@ -17,7 +17,7 @@ class peliculas extends conexion{
         while ( $fila = $resultado->fetch_assoc()) {
             $this->data[] = $fila;
         }
-        
+        $this->mysqli->close();
         return $this->data;
     }
 
@@ -27,9 +27,11 @@ class peliculas extends conexion{
         while ( $fila = $resultado->fetch_assoc()) {
             $this->data[] = $fila;
         }
-        
+        $this->mysqli->close();
         return $this->data;
     }
+
+    
 
     public function AgregarPeliculas(){
         parent::Conectar();
@@ -48,6 +50,7 @@ class peliculas extends conexion{
 
         $resultado = $this->mysqli->query("insert into peliculas(Director,Año,Clasificacion,pais,Genero,Sinposis,Nombre,Duracion,Actores,enlace) values('$director',$año,'$clasificacion','$pais','$genero','$sinopsis','$nombre','$duracion','$actores','$enlace');");
         
+        $this->mysqli->close();
         if(!$resultado){
 
             echo $this->mysqli->error;
@@ -71,10 +74,11 @@ class peliculas extends conexion{
             $this->data[] = $fila;
         }
         
+        $this->mysqli->close();
         return $this->data;
     }
 
-    public function InsertarLinkImagen(){
+    public function RegresarIDPelicula(){
         $nombre = $_POST["peli"];
         $enlace = $_POST["enlace"];
         echo $nombre;
@@ -84,11 +88,16 @@ class peliculas extends conexion{
             $id = $fila["idPeliculas"];
         }
 
+        $this->mysqli->close();
 
-        
-        
+        return $id;
+    }
+
+    public function InsertarLinkImagen(){
+        $id = RegresarIDPelicula();
 
         $resultado = $this->mysqli->query("INSERT INTO imagen(idpeliculas,Archivo) VALUES($id,'$enlace');"); 
+        $this->mysqli->close();
         if(!$resultado){
 
             echo $this->mysqli->error;

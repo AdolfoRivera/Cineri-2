@@ -46,6 +46,9 @@
         <button class="btn btn-primary btn-md dropdown-toggle" type="button" data-toggle="dropdown"><?php echo $_SESSION["Nombre"] ." ". $_SESSION["Apellidos"]; ?>
         <span class="caret"></span></button>
         <ul class="dropdown-menu">
+        <?php if($_SESSION["Nombre"] == "Administrador"){ ?>
+          <li class="nav-item"><a href="panel.php">Panel De Control<a/></li>
+        <?php } ?>
         <li class="nav-item"><a href="perfil.php" >Perfil</a></li>
         <li class="nav-item"><a href="salir.php" >Salir</a></li>
         </ul>
