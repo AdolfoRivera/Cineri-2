@@ -9,11 +9,12 @@ include 'header.php';
 <style>
   
 * {box-sizing: border-box;}
+
 body {
   font-family: Verdana, sans-serif;
   background:white;
   background-repeat: no-repeat;
- background-image: url('https://s3.amazonaws.com/statics3.cinemex.com/uploads/cms/bgs/bg-1920.jpg?1552651803');
+  background-image: url('https://s3.amazonaws.com/statics3.cinemex.com/uploads/cms/bgs/bg-1920.jpg?1552651803');
  
 }
 .mySlides {
@@ -23,14 +24,14 @@ body {
 img {
   vertical-align: middle;
   width:100%;
-  height:250PX;
+  height:350PX;
   
 }
 
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 60%;
+  max-width: 100%;
   
   position: relative;
   margin: auto;
@@ -96,7 +97,11 @@ img {
   </style>
 </head>
 <body>
+
+
 <!--SLIDER  XD-->
+
+
 <BR>
 <HR>
   <div>
@@ -104,14 +109,16 @@ img {
 
       <div class="mySlides fade">
        <!-- <div class="numbertext">1 / 3</div>-->
-        <img src="img/promo1.jpg" style="width:100% ">
+        <img src="img/promo1.jpg" style="width:100% height:100%">
         <!--<div class="text">Caption Text</div>-->
+        
       </div>
       
       <div class="mySlides fade">
         <!--<div class="numbertext">2 / 3</div>-->
-        <img src="img/promo2.jpg" style="width:100% ">
+        <img src="img/promo2.jpg" style="width:100% height:100%">
        <!-- <div class="text">Caption Two</div>-->
+       
       </div>
       
       <!--<div class="mySlides fade">-->
@@ -139,7 +146,7 @@ img {
     <div class="row">
       <div class="col-12">
         <img src="images/logocine.jpg" width="auto" height="auto" alt="Avatar de Tomas Mendez" class="img-fluid rounded-circle mb-4">
-       <!--<p class="h2"></p>
+       <p class="h2"></p>
         <p class="h4 font-italic">-</p> 
       </div>
     </div>
@@ -169,13 +176,16 @@ img {
           
         </div>
         <br>
+        
         </article> 
         <?php }?>
        
     </div>
       
   </div>
+
 </section>
+
 
 <?php
 include 'footer.php';
