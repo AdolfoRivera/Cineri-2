@@ -50,7 +50,7 @@ class peliculas extends conexion{
 
         $resultado = $this->mysqli->query("insert into peliculas(Director,Año,Clasificacion,pais,Genero,Sinposis,Nombre,Duracion,Actores,enlace) values('$director',$año,'$clasificacion','$pais','$genero','$sinopsis','$nombre','$duracion','$actores','$enlace');");
         
-        $this->mysqli->close();
+        
         if(!$resultado){
 
             echo $this->mysqli->error;
@@ -61,6 +61,40 @@ class peliculas extends conexion{
         }else{
             echo "<script type='text/javascript'>
             window.alert('Agregado con exito');
+            window.location='panel.php'
+            </script>";
+            
+        }
+        $this->mysqli->close();
+    }
+
+    public function Modificar(){
+
+        $id = $_POST["id"];
+        $nombre = $_POST["nombre"];
+        $director = $_POST["director"];
+        $año = $_POST["año"];
+        $clasificacion = $_POST["clasificacion"];
+        $pais = $_POST["pais"];
+        $genero = $_POST["genero"];
+        $sinopsis = $_POST["sinopsis"];
+        $duracion = $_POST["duracion"];
+        $actores = $_POST["actores"];
+        $enlace = $_POST["enlace"];
+
+        $resultado = $this->mysqli->query("UPDATE peliculas SET Nombre='$nombre',Director ='$director',Año='$año',Clasificacion='$clasificacion', pais='$pais',Genero = '$genero',Sinposis='$sinopsis',Duracion = '$duracion',Actores='$actores',enlace='$enlace' where idPeliculas = $id");
+
+        //$this->mysqli->close();
+        if(!$resultado){
+
+            echo $this->mysqli->error;
+            /*echo "<script type='text/javascript'>
+            window.alert('Error');
+            </script>";*/
+            header('panel.php');
+        }else{
+            echo "<script type='text/javascript'>
+            window.alert('Modificado con exito');
             window.location='panel.php'
             </script>";
             
@@ -94,18 +128,22 @@ class peliculas extends conexion{
     }
 
     public function InsertarLinkImagen(){
-        $id = RegresarIDPelicula();
+        //$id = RegresarIDPelicula();
+        $id = $_POST["id"];
+        $enlace = $_POST["enlace"];
 
         $resultado = $this->mysqli->query("INSERT INTO imagen(idpeliculas,Archivo) VALUES($id,'$enlace');"); 
-        $this->mysqli->close();
+        
         if(!$resultado){
 
             echo $this->mysqli->error;
+            $this->mysqli->close();
             /*echo "<script type='text/javascript'>
             window.alert('Error');
             </script>";*/
             header('panel.php');
         }else{
+            $this->mysqli->close();
             echo "<script type='text/javascript'>
             window.alert('Agregado con exito');
             window.location='panel.php'
