@@ -74,8 +74,8 @@ include 'header.php';
             </form>
             <form onSubmit="return validar(this)" action="insertarImagen.php?>" name="reg" method="post">
             <div class="form-group">
-            <label name="pelicula" for="peli">Seleccionar pelicula</label>
-            <select class="form-control"  id="origen" name="di" >
+            <label name="valor" for="peli">Seleccionar pelicula</label>
+            <select class="form-control"  id="peli" name="valor" >
             <?php
             $datos = $pelis->llenarNombres();
             foreach($datos as $i){ 
@@ -97,7 +97,6 @@ include 'header.php';
             <!-- Fin agregar -->
             <div id="modificar" class ="tab-pane container active" > 
             <!--<label name="pelicula" for="peli"> <strong>Seleccionar Pelicula</strong></label>-->
-            <br>
             <select class="form-control" id="seleccion" name="peli" onchange="return Mostrar();">
             <option>Seleccionar Pelicula </option>
             <?php 

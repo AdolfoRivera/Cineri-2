@@ -129,7 +129,7 @@ class peliculas extends conexion{
 
     public function InsertarLinkImagen(){
         //$id = RegresarIDPelicula();
-        $id = $_POST["id"];
+        $id = $_POST["valor"];
         $enlace = $_POST["enlace"];
 
         $resultado = $this->mysqli->query("INSERT INTO imagen(idpeliculas,Archivo) VALUES($id,'$enlace');"); 
