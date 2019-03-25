@@ -55,6 +55,7 @@
         <?php } ?>
         <li class="nav-item"><a href="perfil.php" >Perfil</a></li>
         <li class="nav-item"><a href="salir.php" >Salir</a></li>
+        <li class="nav-item"><a href="Dulceria.php">Dulceria</a></li>
         </ul>
         </div>
           <li class="nav-item"><a href="#" class="btn btn-primary btn-md"> Proximos Estrenos</a></li>
@@ -65,8 +66,9 @@
           <li class="nav-item"><a href="logear.php" class="btn btn-primary btn-md"> Iniciar Sesion  </a></li>
           <li class="nav-item"><a href="registro.php" class="btn btn-primary btn-md"> Registrar  </a></li>
           <li class="nav-item"><a href="#" class="btn btn-primary btn-md"> Proximos Estrenos </a></li>
-          <li class= "nav-item"><a href="promos_nuevo.php" class="btn btn-primary btn-md">Promociones<a></li>
-          <li class= "nav-item"><a href="Nosotros.php" class="btn btn-primary btn-md">Nosotros<a></li>
+          <li class= "nav-item"><a href="promos_nuevo.php" class="btn btn-primary btn-md">Promociones</a></li>
+          <li class= "nav-item"><a href="Nosotros.php" class="btn btn-primary btn-md">Nosotros</a></li>
+          <li class="nav-item"><a href="Dulceria.php" class="btn btn-primary btn-md">Dulceria</a></li>
           
           <?php
         }
