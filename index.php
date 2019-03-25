@@ -7,14 +7,14 @@ include 'header.php';
 ?>
 
 <style>
-  
+
 * {box-sizing: border-box;}
 
 body {
   font-family: Verdana, sans-serif;
   background:white;
-  background-repeat: no-repeat;
-  background-image: url('https://s3.amazonaws.com/statics3.cinemex.com/uploads/cms/bgs/bg-1920.jpg?1552651803');
+ /* background-repeat: no-repeat;*/
+ background-image: url('https://s3.amazonaws.com/statics3.cinemex.com/uploads/cms/bgs/bg-1920.jpg?1552651803');
  
 }
 .mySlides {
@@ -37,25 +37,6 @@ img {
   margin: auto;
 }
 
-/* Caption text s*/
-/*.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}*/
-
-/* Number text (1/3 etc) */
-/*.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}*/
 
 /* The dots/bullets/indicators */
 .dot {
