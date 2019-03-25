@@ -14,10 +14,14 @@
   <link type="text/css" rel="stylesheet" href="css_neri/estilos.css">
   <link type="text/css" rel = "stylesheet" href="css/estilo2.css">
   <title>Cineri</title>
-
+  
+  <!--Archivos CSS PROMOCIONES-->
+  <link type="text/css" rel="stylesheet" href="css/estilo_promo.css">
+  
   <!--ESTILOS PARA LA PESTAÑA NOSOTROS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+  
   <!--FIN DE ESTILOS PARA LA PESTAÑA NOSOTROS-->
 
   <!-- SECCION NAVEGACIÓN-->
