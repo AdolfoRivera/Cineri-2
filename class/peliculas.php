@@ -101,6 +101,22 @@ class peliculas extends conexion{
         }
     }
 
+    public function eliminar(){
+        $id = $_POST["id"];
+
+        $resultado = $this->mysqli->query("DELETE from peliculas WHERE id='$id'");
+
+        if(!$resultado){
+            echo $this->mysqli->error;
+        }else{
+            echo "<script type='text/javascript'>
+            window.alert('Eliminado con exito');
+            window.location='panel.php'
+            </script>"; 
+        }
+
+    }
+
     public function llenarNombres(){
         $resultado =$this->mysqli->query("select idPeliculas,Nombre from peliculas");
 

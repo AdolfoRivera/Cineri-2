@@ -9,4 +9,8 @@ function Mostrar(){
     window.location.href ="http://localhost/cineri/panel.php?id="+id;
 }
 
+function Eliminar(){
+    
+}
+
 
