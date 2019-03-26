@@ -14,10 +14,14 @@
   <link type="text/css" rel="stylesheet" href="css_neri/estilos.css">
   <link type="text/css" rel = "stylesheet" href="css/estilo2.css">
   <title>Cineri</title>
-
+  
+  <!--Archivos CSS PROMOCIONES-->
+  <link type="text/css" rel="stylesheet" href="css/estilo_promo.css">
+  
   <!--ESTILOS PARA LA PESTAÑA NOSOTROS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+  
   <!--FIN DE ESTILOS PARA LA PESTAÑA NOSOTROS-->
 
   <!-- SECCION NAVEGACIÓN-->
@@ -51,6 +55,7 @@
         <?php } ?>
         <li class="nav-item"><a href="perfil.php" >Perfil</a></li>
         <li class="nav-item"><a href="salir.php" >Salir</a></li>
+        <li class="nav-item"><a href="Dulceria.php">Dulceria</a></li>
         </ul>
         </div>
           <li class="nav-item"><a href="#" class="btn btn-primary btn-md"> Proximos Estrenos</a></li>
@@ -61,8 +66,9 @@
           <li class="nav-item"><a href="logear.php" class="btn btn-primary btn-md"> Iniciar Sesion  </a></li>
           <li class="nav-item"><a href="registro.php" class="btn btn-primary btn-md"> Registrar  </a></li>
           <li class="nav-item"><a href="#" class="btn btn-primary btn-md"> Proximos Estrenos </a></li>
-          <li class= "nav-item"><a href="promos_nuevo.php" class="btn btn-primary btn-md">Promociones<a></li>
-          <li class= "nav-item"><a href="Nosotros.php" class="btn btn-primary btn-md">Nosotros<a></li>
+          <li class= "nav-item"><a href="promos_nuevo.php" class="btn btn-primary btn-md">Promociones</a></li>
+          <li class= "nav-item"><a href="Nosotros.php" class="btn btn-primary btn-md">Nosotros</a></li>
+          <li class="nav-item"><a href="Dulceria.php" class="btn btn-primary btn-md">Dulceria</a></li>
           
           <?php
         }
