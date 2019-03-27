@@ -102,9 +102,9 @@ class peliculas extends conexion{
     }
 
     public function eliminar(){
-        $id = $_POST["id"];
-
-        $resultado = $this->mysqli->query("DELETE from peliculas WHERE id='$id'");
+        $id = $_POST["id1"];
+        $resultado = $this->mysqli->query("DELETE from imagen where idPeliculas=$id");
+        $resultado = $this->mysqli->query("DELETE from peliculas WHERE idPeliculas=$id");
 
         if(!$resultado){
             echo $this->mysqli->error;

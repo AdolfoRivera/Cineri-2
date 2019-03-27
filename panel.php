@@ -1,13 +1,9 @@
 <?php
 require_once 'class/usuarios.php';
 require_once 'class/peliculas.php';
-
-
 $peli = new peliculas();
 $pelis = new peliculas();
 $pelic = new peliculas();
-
-
 include 'header.php';
 ?>
 
@@ -16,13 +12,13 @@ include 'header.php';
     <div class="container">
         <ul class="nav nav-tabs"> 
             <li class="nav-item"> 
-                <a class="nav-link active" data-toggle="tab" href="#modificar">Modificar</a>
+                <a class="nav-link active" data-toggle="tab" href="#modificar"><img src="img/edit.png" width="20%">Modificar</a>
             </li>
             <li class="nav-item"> 
-                <a class="nav-link " data-toggle="tab" href="#agregar">Agregar</a>
+                <a class="nav-link " data-toggle="tab" href="#agregar"><img src="img/add.png" width="20%">Agregar</a>
             </li>
             <li class="nav-item"> 
-                <a class="nav-link" data-toggle="tab" href="#eliminar">Eliminar</a>
+                <a class="nav-link" data-toggle="tab" href="#eliminar"><img src="img/delete.png" width="20%">Eliminar</a>
             </li>
         </ul>
                     
@@ -97,6 +93,8 @@ include 'header.php';
             <!-- Fin agregar -->
             <div id="modificar" class ="tab-pane container active" > 
             <!--<label name="pelicula" for="peli"> <strong>Seleccionar Pelicula</strong></label>-->
+            
+            <form onSubmit="return validar(this)" action="modificar.php" name="reg" method="post"> 
             <select class="form-control" id="seleccion" name="peli" onchange="return Mostrar();">
             <option>Seleccionar Pelicula </option>
             <?php 
@@ -105,9 +103,6 @@ include 'header.php';
                 <option  value="<?php echo $i["idPeliculas"];?>"><?php echo $i["Nombre"];?></option>
              <?php   }?>   
              </select>
-            <form onSubmit="return validar(this)" action="modificar.php" name="reg" method="post"> 
-            
-            <div class="form-group" > 
             
              <?php
                 if(isset($_GET["id"])){
@@ -174,13 +169,26 @@ include 'header.php';
             <input type="text" name="enlace" class="form-control" value="<?php echo $j["enlace"];?>" id="enlace" required="required">
             </div>
             <button type="submit" class="btn btn-primary">Modificar</button>
+            <?php }?>
             </form> 
             </div>
-                <?php }?>
-            </div>
-            </div>
+
             <div id="eliminar" class = "tab-pane container fade">
-                <h1> Eliminar <h1>
+                <div class="form-group">
+                <form onSubmit="return validar(this)" action="eliminar.php" name="rego" method="post">
+                <select id="elimina" class="form-control" onchange="return Eliminar();">
+                <?php
+                    foreach($data as $i){?>
+                        <option  value="<?php echo $i["idPeliculas"];?>"><?php echo $i["Nombre"];?></option>
+                <?php    } ?>
+                </select>
+                <div class="form-group">
+                <label name="id1" for="nombre">Identificador:</label>
+                <input type="text"  readonly name="id1" class="form-control" value="" id="dl" required="required">
+                </div>
+                <button type="submit" class="btn btn-primary">Eliminar </button>
+                </form>
+                </div> 
             </div>
         </div>
     </div>
