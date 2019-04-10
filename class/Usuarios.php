@@ -89,12 +89,13 @@ class Usuarios extends Conexion {
                 // OBTENEMOS EL ULTIMO ID
             $id = $this->mysqli->insert_id;
             // creamos las sesiones para que automaticamente puedas comentar o publicar
-            $_SESSION["idcliente"] = $id;
-            $_SESSION["Nombre"];
-            $_SESSION["Apellidos"];
-
+                
             echo "<script type='text/javascript'>
-            window.location='index.php';
+            alert('Por favor inicie sesion');
+            </script>";
+            
+            echo "<script type='text/javascript'>
+            window.location='logear.php';
             </script>";
         } else {
             /*echo "<script type='text/javascript'>

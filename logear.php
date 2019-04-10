@@ -21,7 +21,7 @@ include "header.php"
         ?>
 
     
-    <div class="foro">
+    <div class="foro" >
         <form method="post" action="login.php">
         <h2>Iniciar sesión</h2>
         <input class="logeo" type="email" name="correo"  placeholder="Correo"  required autofocus >

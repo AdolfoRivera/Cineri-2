@@ -5,7 +5,10 @@
 body {
     background:#F6F6F6;
     color:#3E3E3E;
-    font-size:14px; 
+    font-size:14px;
+    
+    
+    /*background-size: cover;*/
 }
 
 a{
@@ -328,6 +331,20 @@ font-style: italic;
 #perfi{
     border-color: #2B6FB6;
     align-items: center;
+}
+
+#log{
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 1px solid #DDDDDD;
+        border-radius: 6px 6px 6px 6px;
+        bottom: 50px;
+        left: auto;
+        margin-left: -120px;
+        padding: 10px 0 0;
+        position: fixed;
+        text-align: center;
+        width: 90px;
+        z-index: 15;
 }
 
 

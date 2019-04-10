@@ -9,4 +9,10 @@ function Mostrar(){
     window.location.href ="http://localhost/cineri/panel.php?id="+id;
 }
 
+function Eliminar(){
+    var dl = document.getElementById("elimina").value;
+    document.rego.id1.value = dl;
+    //window.location.href ="http://localhost/cineri/panel.php?dl="+dl;
+}
+
 
