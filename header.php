@@ -4,7 +4,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" type="image/x-icon" href="images/logocine.jpg">
+  <link rel="shortcut icon" type="image/x-icon" href="img/icono.png">
   <!-- FUENTES DE GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
   <!-- ARCHIVOS CSS BOOTSTRAP 4 -->
@@ -55,11 +55,11 @@
         <?php } ?>
         <li class="nav-item"><a href="perfil.php" >Perfil</a></li>
         <li class="nav-item"><a href="salir.php" >Salir</a></li>
-        <li class="nav-item"><a href="Dulceria.php">Dulceria</a></li>
         </ul>
         </div>
           <li class="nav-item"><a href="#" class="btn btn-primary btn-md"> Proximos Estrenos</a></li>
           <li class= "nav-item"><a href="promos_nuevo.php" class="btn btn-primary btn-md">Promociones<a></li>
+          <li class="nav-item"><a href="Dulceria.php">Dulceria</a></li>
           <?php
         }else{ 
           ?>

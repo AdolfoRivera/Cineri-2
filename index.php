@@ -11,11 +11,16 @@ include 'header.php';
 * {box-sizing: border-box;}
 
 body {
-  font-family: Verdana, sans-serif;
+  /*font-family: Verdana, sans-serif;
   background:white;
- /* background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
  background-image: url('https://s3.amazonaws.com/statics3.cinemex.com/uploads/cms/bgs/bg-1920.jpg?1552651803');
- 
+ */
+background: url('https://s3.amazonaws.com/statics3.cinemex.com/uploads/cms/bgs/bg-1920.jpg?1552651803') no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 .mySlides {
   display: none;
@@ -90,23 +95,23 @@ img {
 
       <div class="mySlides fade">
        <!-- <div class="numbertext">1 / 3</div>-->
-        <img src="img/promo1.jpg" style="width:100% height:100%">
+        <img src="img/promo1.jpg" style="width:100% height:70%">
         <!--<div class="text">Caption Text</div>-->
         
       </div>
       
       <div class="mySlides fade">
         <!--<div class="numbertext">2 / 3</div>-->
-        <img src="img/promo2.jpg" style="width:100% height:100%">
+        <img src="img/promo2.jpg" style="width:100% height:70%">
        <!-- <div class="text">Caption Two</div>-->
        
       </div>
       
-      <!--<div class="mySlides fade">-->
-       <!-- <div class="numbertext">3 / 3</div>-->
-        <!--<img src="img/promocion4.jpg" style="width:90%">-->
-       <!-- <div class="text">Caption Three</div>-->
-      <!--</div>-->
+      <div class="mySlides fade">
+      <!--<div class="numbertext">3 / 3</div>-->
+        <img src="img/icono.png" style="width:70%">
+       <!--<div class="text">Caption Three</div>-->
+      </div>
       
       </div>
       <br>

@@ -347,8 +347,35 @@ font-style: italic;
         z-index: 15;
 }
 
+#bannerH{
+    padding-left: 0%;
+    color: #000;
+    border-block-end: 1px solid #c0c0c0;
+}
 
+#horarios a{
+    margin-bottom: 1%;
+}
 
+#trailer{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
 
+#trailer iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
-
+.separador{
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    border-color:red;
+    height:         100vh;
+    width:          1px; 
+}

@@ -168,6 +168,18 @@ class peliculas extends conexion{
         }
 
     }
+
+    public function horario($id){
+        $resultado = $this->mysqli->query("select TIME_FORMAT(hora,'%H:%i') as hora from funcion where idPelicula=$id"); 
+
+        while ( $fila = $resultado->fetch_assoc()) {
+            $this->data[] = $fila;
+        }
+        
+        $this->mysqli->close();
+        return $this->data;
+
+    }
     
 }
 ?>

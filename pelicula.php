@@ -3,6 +3,7 @@ require_once 'class/usuarios.php';
 require_once 'class/peliculas.php';
 
 $peli = new peliculas();
+$hor = new peliculas();
 include 'header.php';
 ?>
 
@@ -27,6 +28,7 @@ include 'header.php';
                 <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
                     <img class="card-img-top h-100" src=<?php echo $_GET["url"]; ?> alt="Imagen de pelicula">
                 </div>
+                
                 <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
                     <h3 class="label label-default"><?php echo $i["Nombre"]; ?> </h3>
                     <label class="label label-default">Actores: <?php echo $i["Actores"]; ?>  </label>
@@ -36,6 +38,19 @@ include 'header.php';
                     <label class="label label-default">Clasificación:  <?php echo $i["Clasificacion"]; ?></label>
                     <label class="label label-default">Duración: <?php echo $i["Duracion"]; ?> minutos</label>
                     <label class="label label-default">Género: <?php echo $i["Genero"]; ?><label>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+                    <h4 id="bannerH"> Horarios </h4>
+                    <div id="horarios">
+                        <?php 
+                        $data = $hor->horario($_GET["id"]);
+                        foreach($data as $j){
+                            $data["hora"] = $j["hora"];
+                        ?>
+                        <a class="btn btn-primary btn-md" href=""><?php echo $j["hora"]; ?></a>
+                        <?php }?>
+                    </div>
                 </div>
             </div>
             <div class="row" style="margin-left: 10%;">
@@ -51,8 +66,10 @@ include 'header.php';
                     
                     <div class="tab-content"> 
                     <div  id="trailer" class ="tab-pane container active"> 
-                    <iframe width="760" height="360" src="<?php echo $i["enlace"]?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                    <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe class="embed-responsive-item" src="<?php echo $i["enlace"]?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                     </iframe>
+                    </div>
                     </div>
 
                     <div id="sinopsis" class ="tab-pane container fade" > 
@@ -61,6 +78,7 @@ include 'header.php';
                     </div>
                 </div>
             </div>
+            <br>
         </div>
     </div>
 

@@ -21,7 +21,7 @@ include 'header.php';
 html, body {
   height: 100%;
   overflow: hidden;
-    font-family: 'Roboto Condensed', sans-serif;
+  
 }
 .page {
   height: 100%;
@@ -207,10 +207,12 @@ body {
       <br><br>
     
       <h1>Mision</h1>
-      <p>Descripcion</p>
+      <p>Nuestra misión es dar a nuestros invitados la mejor experiencia de entretenimiento, basada en el esfuerzo, talento y compromiso de todos, generando valor, innovación y mucha diversión.</p>
       <br>
       <h1>Vision</h1>
-      <p>Descripcion</p>
+      <p>Nuestra vision es competir contra los cines mas representavios de mexico y poder ofrecerte el mejor
+        servicio, dandote siempre el mejor precio
+      </p>
       <br>
       <h1>Valores</h1>      
       <p>Descripcion</p>
