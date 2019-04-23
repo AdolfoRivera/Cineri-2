@@ -51,7 +51,8 @@
         <span class="caret"></span></button>
         <ul class="dropdown-menu">
         <?php if($_SESSION["Nombre"] == "Administrador"){ ?>
-          <li class="nav-item"><a href="panel.php">Panel De Control</a></li>
+          <li class="nav-item"><a href="panel.php">Panel De Peliculas</a></li>
+          <li class="nav-item"><a href="panelFuncion.php">Panel De Horarios </a></li>
         <?php } ?>
         <li class="nav-item"><a href="perfil.php" >Perfil</a></li>
         <li class="nav-item"><a href="salir.php" >Salir</a></li>
@@ -59,7 +60,7 @@
         </div>
           <li class="nav-item"><a href="#" class="btn btn-primary btn-md"> Proximos Estrenos</a></li>
           <li class= "nav-item"><a href="promos_nuevo.php" class="btn btn-primary btn-md">Promociones<a></li>
-          <li class="nav-item"><a href="Dulceria.php">Dulceria</a></li>
+          <li class="nav-item"><a href="Dulceria.php" class="btn btn-primary btn-md">Dulceria</a></li>
           <?php
         }else{ 
           ?>
