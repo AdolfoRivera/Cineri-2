@@ -1,16 +1,18 @@
 <!-- SECCION PIE DE PÁGINA -->
-<footer class="pie-de-pagina text-center text-md-right bg-dark text-white">
-  <div class="container">
-  <li class="nav-item"><a href="Nosotros.php" class="nav-link"> Nosotros |</a></li>
-  <p style="color:white, text-align:center;" class="m-0 py-3">Copyright © 2019. Todos los derechos reservados. </p>
-    
+<!-- Footer -->
+<footer class="page-footer font-small" style="
+    background-color: #343a40!important;">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center  py-3" style="
+    color: white;">© 2019 Copyright:
+    <a href="Nosotros.php"> <strong style="color: white;">Cineri</strong></a>
   </div>
-  <!--PAGINA DE DULSES-->
-  <!--https://ladulceestacion.com/-->
-  <!--PARA PROGRAMAR ONLINE-->
-  <!--https://codepen.io/anon/pen/OqeNVZ-->
-  
+  <!-- Copyright -->
+
 </footer>
+<!-- Footer -->
+  <!-- Footer -->
 
 <!-- ARCHIVOS BOOTSTRAP JAVASCRIPT d-->
 <script src="js/jquery-3.3.1.min.js"> </script>

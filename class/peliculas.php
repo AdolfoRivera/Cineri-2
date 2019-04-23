@@ -103,6 +103,7 @@ class peliculas extends conexion{
 
     public function eliminar(){
         $id = $_POST["id1"];
+        $resultado = $this->mysqli->query("DELETE from funcion where idPeliculas=$id");
         $resultado = $this->mysqli->query("DELETE from imagen where idPeliculas=$id");
         $resultado = $this->mysqli->query("DELETE from peliculas WHERE idPeliculas=$id");
 
@@ -167,6 +168,55 @@ class peliculas extends conexion{
             
         }
 
+    }
+
+    public function horario($id){
+        $resultado = $this->mysqli->query("select TIME_FORMAT(hora,'%H:%i') as hora from funcion where idPelicula=$id"); 
+
+        while ( $fila = $resultado->fetch_assoc()) {
+            $this->data[] = $fila;
+        }
+        
+        $this->mysqli->close();
+        return $this->data;
+
+    }
+
+    public function insertarHYS(){
+        $id = $_POST["id1"];
+        $horas = $_POST["hora"];
+        $salas = $_POST["sala"];
+
+        
+
+        //$aux1 = array();
+        //$aux2 = array();
+
+        $aux1 = explode(",",$horas);
+        $aux2 = explode(",",$salas);
+
+        if(sizeof($aux1)==sizeof($aux2)){
+            for($i=0;$i<sizeof($aux1);$i++){
+                $resultado = $this->mysqli->query("insert into funcion(idPelicula,hora,sala) values($id,'$aux1[$i]','$aux2[$i]');");
+            }
+
+            if(!$resultado){
+                echo $this->mysqli->error;
+                $this->mysqli->close();
+            }else{
+                $this->mysqli->close();
+                echo "<script type='text/javascript'>
+                window.alert('Agregados con exito');
+                window.location='panelFuncion.php'
+                </script>";
+            }
+        }else{
+            echo "<script type='text/jacascript'>
+            windows.alert('El numero de salas no es igual numero de horarios');
+            window.location='panelFuncion-php';
+            </script>";
+        }
+        
     }
     
 }
