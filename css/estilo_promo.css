@@ -1,11 +1,4 @@
-.pro{
-    margin:2%; 
-
-}
-
 .content-all{
-
-
     width: 100%;
     height: 100%;
 }
@@ -163,3 +156,4 @@ transform: scale(1);
 	-webkit-transition:all 500ms;
 	transition:all 500ms;
 }
+
