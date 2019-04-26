@@ -91,11 +91,11 @@ include "header.php";
 <br>
 <br>
 <br>
-<div class="container">
+<div id="conta" class="container">
     <h1 class="titulo_promocion">Promociones</h1>
     
-    <div class="row ">
-        <div class="col-md-offset-4 col-lg-1 col-md-6 col-sm-12 p-auto "href="#">
+    <div class="row">
+        <div class="col-md-offset-4 col-lg-1 col-md-6 col-sm-12 p-auto m-auto"href="#">
         <div class="content-img">
 	
 		<img src="images_promo/promocion1.jpg">
@@ -111,7 +111,7 @@ include "header.php";
 
 </div>
 </div>
-      <div class="col-md-offset-4 col-lg-1 col-md-6 col-sm-12 p-auto" href="#">
+      <div class="col-md-offset-4 col-lg-1 col-md-6 col-sm-12 p-auto m-auto" href="#">
       <div class="content-img">
 	
     <img src="images_promo/promocion2.jpg">
@@ -128,7 +128,7 @@ include "header.php";
 
 </div>
 </div>
-         <div class="col-md-offset-4 col-lg-1 col-md-6 col-sm-12 p-auto" href="#">
+         <div class="col-md-offset-4 col-lg-1 col-md-6 col-sm-12 p-auto m-auto" href="#">
          <div class="content-img">
 	
     <img src="images_promo/promocion3.jpg">
@@ -147,7 +147,7 @@ include "header.php";
 </div>
 </div>
       
-            <div class="col-md-offset-4 col-lg-1 col-md-6 col-sm-12 p-auto " href="#">
+            <div class="col-md-offset-4 col-lg-1 col-md-6 col-sm-12 p-auto m-auto" href="#">
             <div class="content-img">
 	
 		<img src="images_promo/promocion4.jpg">

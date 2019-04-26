@@ -157,3 +157,7 @@ transform: scale(1);
 	transition:all 500ms;
 }
 
+#conta{
+	margin-left: 0%;
+	margin-right: 0%;
+}
