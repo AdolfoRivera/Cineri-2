@@ -40,6 +40,7 @@
     margin-left:200px;
     margin-right:200px;
     color:#ff401c;
+    font: 100% sans-serif;
 }
 
 .datos{
@@ -50,7 +51,7 @@
     font: 150% sans-serif;
 }
 
-.rop{
+#rop{
     margin: gray 2px solid; 
     margin-left: 100px;
     margin-top: 50px;
@@ -59,7 +60,10 @@
     border-left-width: 10px;
     justify-content: center;
 }
-.containerr{
+#containerr{
     border: blue 2px solid ;
 }
 
+#contenido1{
+    border: orangered 2px solid;
+}
