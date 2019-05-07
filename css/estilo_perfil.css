@@ -61,7 +61,8 @@
     justify-content: center;
 }
 #containerr{
-    border: blue 2px solid ;
+    border: orangered 2px solid ;
+    justify-content: center;
 }
 
 #contenido1{

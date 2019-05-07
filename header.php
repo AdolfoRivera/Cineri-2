@@ -18,12 +18,14 @@
   <!--Archivos CSS PROMOCIONES-->
   <link type="text/css" rel="stylesheet" href="css/estilo_promo.css">
 
-  <!--Archivos CSS PERFIL DE USUARIO-->
-  <link type="text/css" rel="stylesheet" href="css/estilo_perfil.css"
   <!--ESTILOS PARA LA PESTAÑA NOSOTROS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
   
+  <!--ARCHIVOS CSS PERFIL USUARIO-->
+  <link rel="stylesheet" type="text/css" href="css/estilo_perfil.css" media="">
+  <link type="text/css" rel="stylesheet" href="css_neri/bootstrap.min.css"> 
+
   <!--FIN DE ESTILOS PARA LA PESTAÑA NOSOTROS-->
 
   <!-- SECCION NAVEGACIÓN-->
