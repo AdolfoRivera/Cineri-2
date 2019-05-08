@@ -107,6 +107,7 @@ img {
       <div class="mySlides fade">
         <!--<div class="numbertext">2 / 3</div>-->
         <img src="img/promo2.jpg" style="width:100% height:70%">
+        <img src="">
        <!-- <div class="text">Caption Two</div>-->
        
       </div>

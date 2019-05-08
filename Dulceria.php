@@ -73,7 +73,7 @@ include "header.php";
 </section>
 
 </div><div id="shopify-section-featured-images" class="shopify-section shopify-section__featured-images">
-
+<br>
 <section class="marketing-module  container">
   
 
@@ -84,7 +84,9 @@ include "header.php";
     
       
         <a href="/collections/granel-4" class="marketing-module__item marketing-module__link">
-          <img class="marketing-module__image" src="//cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-04_500x400.jpg?v=1496242672" srcset="//cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-04_500x400.jpg?v=1496242672 1x, //cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-04_500x400@2x.jpg?v=1496242672 2x" alt="">
+
+        <img src="imagenes_dulceria/palomitas.jpg">
+
         </a>
       
     
