@@ -85,7 +85,7 @@ include "header.php";
       
         <a href="/collections/granel-4" class="marketing-module__item marketing-module__link">
 
-        <img src="imagenes_dulceria/palomitas.jpg">
+        <img src="imagenes_dulceria/palomitas2.jpg" style="width: 100%; height: 100p%">
 
         </a>
       
