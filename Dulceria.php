@@ -85,7 +85,7 @@ include "header.php";
       
         <a href="/collections/granel-4" class="marketing-module__item marketing-module__link">
 
-        <img src="imagenes_dulceria/palomitas2.jpg" style="width: 100%; height: 100p%">
+        <img src="imagenes_dulceria/palomitas2.jpg" style="width: 100%; height: 100%;">
 
         </a>
       
@@ -98,7 +98,9 @@ include "header.php";
     
       
         <a href="/collections/piezas-y-marca-4" class="marketing-module__item marketing-module__link">
-          <img class="marketing-module__image" src="//cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-03_500x400.jpg?v=1496242698" srcset="//cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-03_500x400.jpg?v=1496242698 1x, //cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-03_500x400@2x.jpg?v=1496242698 2x" alt="">
+        <img src="imagenes_dulceria/coca.png" style="width:100%; height:100%;">
+
+          <!--<img class="marketing-module__image" src="//cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-03_500x400.jpg?v=1496242698" srcset="//cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-03_500x400.jpg?v=1496242698 1x, //cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-03_500x400@2x.jpg?v=1496242698 2x" alt="">-->
         </a>
       
     
@@ -110,7 +112,8 @@ include "header.php";
     
       
         <a href="/collections/accesorios-1" class="marketing-module__item marketing-module__link">
-          <img class="marketing-module__image" src="//cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-02_500x400.jpg?v=1496242726" srcset="//cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-02_500x400.jpg?v=1496242726 1x, //cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-02_500x400@2x.jpg?v=1496242726 2x" alt="">
+        <img src="imagenes_dulceria/nachos2.jpg" style="width:100%; height:100%;">
+          <!--<img class="marketing-module__image" src="//cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-02_500x400.jpg?v=1496242726" srcset="//cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-02_500x400.jpg?v=1496242726 1x, //cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-02_500x400@2x.jpg?v=1496242726 2x" alt="">-->
         </a>
       
     
@@ -161,8 +164,8 @@ include "header.php";
 
       <div class="product-item__image-wrapper">
         
-
-        <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/13_005_650x.jpg?v=1526336898" alt="Cacahuate Enchilado Marca Taitto 1kg">
+      <img src="imagenes_dulceria/nachos.jpg" style="width:100%; height:100%;">
+       <!-- <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/13_005_650x.jpg?v=1526336898" alt="Cacahuate Enchilado Marca Taitto 1kg">-->
       </div>
 
       
@@ -283,8 +286,8 @@ include "header.php";
 
       <div class="product-item__image-wrapper">
         
-
-        <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/13_006_650x.jpg?v=1526336929" alt="Cacahuate Espanol Marca Taitto 1kg">
+      <img src="imagenes_dulceria/nachos3.jpg" style="width:100%; height:100%;">
+        <!--<img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/13_006_650x.jpg?v=1526336929" alt="Cacahuate Espanol Marca Taitto 1kg">-->
       </div>
 
       
@@ -405,9 +408,9 @@ include "header.php";
       
 
       <div class="product-item__image-wrapper">
-        
+      <img src="imagenes_dulceria/nachos4.jpg" style="width:100%; height:100%;">
 
-        <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/13_007_650x.jpg?v=1526336994" alt="Cacahuate Japones Marca Taitto 1kg">
+       <!-- <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/13_007_650x.jpg?v=1526336994" alt="Cacahuate Japones Marca Taitto 1kg">-->
       </div>
 
       
@@ -529,9 +532,9 @@ include "header.php";
       
 
       <div class="product-item__image-wrapper">
-        
+      <img src="imagenes_dulceria/palomitas2.jpg" style="width:100%; height:100%;">
 
-        <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/ba6a5bcea39887665036e8f8e50da4b7_650x.png?v=1523458351" alt="Cacahuate Crujiente Sabor Queso Marca Sabrosita 900g">
+       <!-- <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/ba6a5bcea39887665036e8f8e50da4b7_650x.png?v=1523458351" alt="Cacahuate Crujiente Sabor Queso Marca Sabrosita 900g">-->
       </div>
 
       
@@ -650,9 +653,9 @@ include "header.php";
       
 
       <div class="product-item__image-wrapper">
-        
+      <img src="imagenes_dulceria/palomitas3.jpg" style="width:100%; height:100%;">
 
-        <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/panditas-ricolino_gomas_650x.jpg?v=1526481804" alt="Panditas Ricolino">
+       <!-- <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/panditas-ricolino_gomas_650x.jpg?v=1526481804" alt="Panditas Ricolino">-->
       </div>
 
       
@@ -773,9 +776,9 @@ include "header.php";
       
 
       <div class="product-item__image-wrapper">
-        
+      <img src="imagenes_dulceria/palomitas4.jpg" style="width:100%; height:100%;">
 
-        <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/668a0505974a682478865dca84c21bf1_650x.jpg?v=1523458331" alt="M&amp;M Clasico 1kg">
+       <!-- <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/668a0505974a682478865dca84c21bf1_650x.jpg?v=1523458331" alt="M&amp;M Clasico 1kg">-->
       </div>
 
       
