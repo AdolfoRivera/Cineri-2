@@ -7,6 +7,7 @@ include 'header.php';
 ?>
 
 <style>
+  
 
 * {box-sizing: border-box;}
 
@@ -80,6 +81,9 @@ img {
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+.centr_boton{
+  text-align: center;
+}
   </style>
 </head>
 <body>
@@ -103,6 +107,7 @@ img {
       <div class="mySlides fade">
         <!--<div class="numbertext">2 / 3</div>-->
         <img src="img/promo2.jpg" style="width:100% height:70%">
+        <img src="">
        <!-- <div class="text">Caption Two</div>-->
        
       </div>
@@ -152,13 +157,17 @@ img {
           $datos["Archivo"] = $i["Archivo"];
       ?>
       <article class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+      
         <div class="card">
           <img class="card-img-top h-100" src=<?php echo $i["Archivo"];?> alt="Proyecto 1">
-          <div class="card-body">
+          <div class="card-body" >
             <h5 class="card-title"><?php echo $i["Nombre"]; ?></h5>
-            <a href="pelicula.php?id=<?php echo $i["idPeliculas"]."&url=".$i["Archivo"];?>" class="btn btn-primary">Consultar</a>
-            
-          </div>
+           
+      <div class="centr_boton">
+            <a href="pelicula.php?id=<?php echo $i["idPeliculas"]."&url=".$i["Archivo"];?>"  class="btn btn-primary">Consultar</a>
+      </div>
+     
+    </div>
           
         </div>
         <br>
