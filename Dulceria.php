@@ -86,6 +86,7 @@ include "header.php";
         <a href="/collections/granel-4" class="marketing-module__item marketing-module__link">
 
         <img src="imagenes_dulceria/palomitas2.jpg" style="width: 100%; height: 100%;">
+        <!--<img class="marketing-module__image" src="//cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-03_500x400.jpg?v=1496242698" srcset="//cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-03_500x400.jpg?v=1496242698 1x, //cdn.shopify.com/s/files/1/1774/9773/files/Banner_chicos_web_Dulce_Est_29_05_2017-03_500x400@2x.jpg?v=1496242698 2x" alt="">-->
 
         </a>
       
@@ -653,7 +654,7 @@ include "header.php";
       
 
       <div class="product-item__image-wrapper">
-      <img src="imagenes_dulceria/palomitas3.jpg" style="width:100%; height:100%;">
+      <img src="imagenes_dulceria/palomitas7.jpg" style="width:100%; height:100%;">
 
        <!-- <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/panditas-ricolino_gomas_650x.jpg?v=1526481804" alt="Panditas Ricolino">-->
       </div>
@@ -776,7 +777,7 @@ include "header.php";
       
 
       <div class="product-item__image-wrapper">
-      <img src="imagenes_dulceria/palomitas4.jpg" style="width:100%; height:100%;">
+      <img src="imagenes_dulceria/palomitas5.jpg" style="width:100%; height:100%;">
 
        <!-- <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/668a0505974a682478865dca84c21bf1_650x.jpg?v=1523458331" alt="M&amp;M Clasico 1kg">-->
       </div>
@@ -901,8 +902,8 @@ include "header.php";
 
       <div class="product-item__image-wrapper">
         
-
-        <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/13_004_650x.jpg?v=1526336553" alt="Cacahuate Crujiente Enchilado Tipo Hot Nuts Marca Taitto 1kg">
+      <img src="imagenes_dulceria/cocacola1.jpg" style="width:100%; height:100%;">
+        <!--<img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/13_004_650x.jpg?v=1526336553" alt="Cacahuate Crujiente Enchilado Tipo Hot Nuts Marca Taitto 1kg">-->
       </div>
 
       
@@ -1017,9 +1018,10 @@ include "header.php";
 
       <div class="product-item__image-wrapper">
         
-
-        <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/22-009_650x.jpg?v=1526482500" alt="Frutitas Lucky Gummy 1kg">
-      </div>
+      <img src="imagenes_dulceria/coca.png" style="width:100%; height:100%;">
+       <!-- <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/22-009_650x.jpg?v=1526482500" alt="Frutitas Lucky Gummy 1kg">-->
+       
+             </div>
 
       
         <span class="button button--small button--full button--secondary button--quick-shop" data-action="open-quick-shop" data-product-id="469475328037" style="display: none">
@@ -1140,8 +1142,8 @@ include "header.php";
 
       <div class="product-item__image-wrapper">
         
-
-        <img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/22053_650x.jpg?v=1526480752" alt="Lombriz Neon Lucky Gummy 1kg">
+      <img src="imagenes_dulceria/cocacola3.jpg" style="width:100%; height:100%;">
+        <!--<img class="product-item__image" src="//cdn.shopify.com/s/files/1/1774/9773/products/22053_650x.jpg?v=1526480752" alt="Lombriz Neon Lucky Gummy 1kg">-->
       </div>
 
       
@@ -1181,90 +1183,7 @@ include "header.php";
   }
 </style>
 
-</div><div id="shopify-section-featured-collections" class="shopify-section shopify-section__featured-collections"><section class="index-module index-module__section-featured-collections index-module__collections">
-  <div class="container">
-    
-      <h2 class="index-module__title">Lista de Categorías</h2>
-    
 
-    <div class="collections grid grid--gallery">
-      
-
-          
-
-
-
-
-
-<div class="1/2--handheld 1/3--lap-and-up grid__cell">
-  <a href="/collections/granel-4" class="collections__item">
-    <img class="collections__image" src="//cdn.shopify.com/s/files/1/1774/9773/collections/Banner_chicos_web_Dulce_Est_02-03-2018-05_650x.jpg?v=1520209423" alt="GRANEL">
-    <div class="collections__overlay"></div>
-    <h3 class="collections__title">GRANEL</h3>
-  </a>
-</div>
-        
-      
-
-          
-
-
-
-
-
-<div class="1/2--handheld 1/3--lap-and-up grid__cell">
-  <a href="/collections/productos-de-marca" class="collections__item">
-    <img class="collections__image" src="//cdn.shopify.com/s/files/1/1774/9773/collections/Banner_chicos_web_Dulce_Est_02-03-2018-06_650x.jpg?v=1520209486" alt="Dulces de Marca">
-    <div class="collections__overlay"></div>
-    <h3 class="collections__title">Dulces de Marca</h3>
-  </a>
-</div>
-        
-      
-
-          
-
-
-
-
-
-<div class="1/2--handheld 1/3--lap-and-up grid__cell">
-  <a href="/collections/accesorios-p-fiesta" class="collections__item">
-    <img class="collections__image" src="//cdn.shopify.com/s/files/1/1774/9773/collections/Banner_chicos_web_Dulce_Est_02-03-2018-07_650x.jpg?v=1520209529" alt="Accesorios">
-    <div class="collections__overlay"></div>
-    <h3 class="collections__title">Accesorios</h3>
-  </a>
-</div>
-        
-      
-    </div>
-  </div>
-</section>
-
-<style>
-  .index-module__section-featured-collections {
-    background: #ffffff;
-    color: #eba0ca;
-  }
-</style>
-
-</div><div id="shopify-section-1496670336786" class="shopify-section  shopify-section__featured-content"><section class="index-module index-module__section-1496670336786 index-module__featured-content">
-  <div class="container">
-    
-     
-
-        
-      </div>
-
-</section>
-
-</div><div id="shopify-section-featured-blog" class="shopify-section shopify-section__featured-blog">
-
-
-  <section class="index-module index-module__section-featured-blog index-module__blog">
-    <div class="container">
-      
-     </div>
 
 <?php
 include 'footer.php';
