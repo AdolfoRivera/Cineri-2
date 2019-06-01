@@ -10,7 +10,7 @@ include "header.php";
         <input type="email" name="correo" placeholder="Correo Electronico" required="required">
         <input type="password" name="pass" placeholder="Contraseña" required="required">
         <button class="btn btn-danger" type="submit" name="iniciar" class="btn">Registrar</button>
-    </form>
+</form>
 </div>
 <?php
 include "footer.php";

@@ -25,16 +25,17 @@ include 'header.php';
                         $datos["enlace"]=$i["enlace"];
                     }
                 ?>
-                <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+                <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0" style="margin-right: 5%;">
                     <img class="card-img-top h-100" src=<?php echo $_GET["url"]; ?> alt="Imagen de pelicula">
                 </div>
                 
-                <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0">
+                <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0" style="margin-right: 5%;">
                     <h3 class="label label-default"><?php echo $i["Nombre"]; ?> </h3>
                     <label class="label label-default">Actores: <?php echo $i["Actores"]; ?>  </label>
                     <label class="label label-default">Director: <?php echo $i["Director"]; ?> </label>
                     <label class="label label-default">Pais: <?php echo $i["pais"]; ?> </label>
                     <label class="label label-default">Año: <?php echo $i["Año"]; ?> </label>
+                    <br>
                     <label class="label label-default">Clasificación:  <?php echo $i["Clasificacion"]; ?></label>
                     <label class="label label-default">Duración: <?php echo $i["Duracion"]; ?> minutos</label>
                     <label class="label label-default">Género: <?php echo $i["Genero"]; ?><label>
@@ -48,7 +49,8 @@ include 'header.php';
                         foreach($data as $j){
                             $data["hora"] = $j["hora"];
                         ?>
-                        <a class="btn btn-primary btn-md" href=""><?php echo $j["hora"]; ?></a>
+                        
+                        <a class="btn btn-primary btn-md" href="compra.php?id=<?php echo $_GET["id"]."&hora=".$j["hora"]."&url=".$_GET["url"];?>"><?php echo $j["hora"]; ?></a>
                         <?php }?>
                     </div>
                 </div>

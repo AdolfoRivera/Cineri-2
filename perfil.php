@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Editar Usuario</title>
-    </head>
-    <meta charset="uf-8">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-    <link rel="stylesheet" type="text/css" href="css/estilo2.css">
-    <link type="text/css" rel="stylesheet" href="css_neri/bootstrap.min.css">
+<?php
+require_once 'class/usuarios.php';
+require_once 'class/peliculas.php';
+
+include 'header.php';
+?>
     
     <div class="foro" >
         <form onSubmit="return validar(this)" action="registrar.php" name="reg" method="post" class="formulario">
@@ -15,9 +12,9 @@
                 <input type="text" name="apellidos"  pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" placeholder="Apellidos " required="required">
                 <input type="email" name="correo" placeholder="Correo Electronico" required="required">
                 <input type="password" name="pass" placeholder="Contraseña" required="required">
-                <button class="btn btn-danger" type="submit" name="iniciar" class="btn">Registrar</button>
+                <button class="btn btn-danger" type="submit" name="iniciar" class="btn">Guardar</button>
             </form>
     </div>
-
-</html>
-
+    <?php
+    include 'footer.php';
+    ?>

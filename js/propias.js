@@ -44,3 +44,17 @@ function contar2(){
         }
     }
 }
+
+function CalcularBoletos(){
+    var adu = 52.00;
+    var men = 34.00;
+    var may = 45.00;
+
+    var adulto = document.getElementById("adulto").value;
+    var menor = document.getElementById("menor").value;
+    var mayor = document.getElementById("mayor").value;
+    var aux = document.getElementById("total");
+    var total = (adu*adulto)+(menor*men)+(may*mayor);
+    aux.innerHTML = "<label id='total'> <strong>Precio total de la compra: $</strong>"+total+":00</label>";
+
+}
