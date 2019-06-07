@@ -52,10 +52,6 @@ include "header.php";
 
 
 
-  
-        
-
-
   <div class="slideshow__arrows">
     <div class="container">
       <a href="#" class="slideshow__arrow slideshow__prev slick-arrow" rel="prev" style="display: inline-block;"><svg class="icon icon-arrow-left">
@@ -68,9 +64,15 @@ include "header.php";
     
   </use>
 </svg></a>
-    </div>
-  </div>
+
+
+
+  </div></div>
 </section>
+
+
+
+
 
 </div><div id="shopify-section-featured-images" class="shopify-section shopify-section__featured-images">
 <br>
