@@ -12,7 +12,7 @@ include 'header.php';
     <div class="container">
         <ul class="nav nav-tabs"> 
             <li class="nav-item"> 
-                <a class="nav-link active" data-toggle="tab" href="#modificar"><img src="img/edit.png" width="20%">Modificar</a>
+                <a class="nav-link active" data-toggle="tab" href="#modificar1"><img src="img/edit.png" width="20%">Modificar</a>
             </li>
             <li class="nav-item"> 
                 <a class="nav-link " data-toggle="tab" href="#agregar"><img src="img/add.png" width="20%">Agregar</a>
@@ -91,7 +91,7 @@ include 'header.php';
             </div>
 
             <!-- Fin agregar -->
-            <div id="modificar" class ="tab-pane container active" > 
+            <div id="modificar1" class ="tab-pane container active" > 
             <!--<label name="pelicula" for="peli"> <strong>Seleccionar Pelicula</strong></label>-->
             
             <form onSubmit="return validar(this)" action="modificar.php" name="reg" method="post"> 

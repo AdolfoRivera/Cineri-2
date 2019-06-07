@@ -379,3 +379,35 @@ font-style: italic;
     height:         100vh;
     width:          1px; 
 }
+
+.qty-row{
+    background: #e2e2e2;
+    color: #555555;
+    font-size: 17px;
+    line-height: 22px;
+    padding: 11px 20px;
+    position: relative;
+    margin-bottom: 3px;
+    margin-right: 91px;
+}
+
+.qty-selection, .qty-selection input[type=number]{
+    background: #FFFFFF;
+    border: 1px solid #e2e2e3;
+    color: #555555;
+    display: block;
+    font-size: 17px;
+    height: 20%;
+    position: absolute;
+    right: -91;
+    text-align: center;
+    top:0;
+    width: 90px;
+    line-height: 22px;
+}
+
+.CP1{
+    border: #000 2px solid;
+    padding: 4%;
+    margin: 1%;
+}
